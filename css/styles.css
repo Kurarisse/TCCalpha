@@ -34,7 +34,7 @@ body{
 
 /* CONFIGURAÇÕES BOTÃO DE ACESSIBILIDADE */
 #acessibilidade{
-    border-radius: 50%;
+    border-radius: 100%;
     background-color: rgb(79, 77, 140);
     position: fixed;
     right: 60px;

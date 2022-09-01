@@ -8,28 +8,99 @@
 
 body{
     width: 100%;
+    height: 100%;
 }
 
 /* CONFIGURAÇÕES CABEÇALHO */
 #cabecalho{
     background-color: rgb(79, 77, 140);
-    width: fit-content;
-    height: fit-content;
+    width: 100%;
+    height: 90px;
 }
 
-#menu{
+#menu ul li{
+    position: relative;
+    float: left;
+    
+}
+
+#menu ul li a{
+    display: block;
+}
+
+a.menu:hover{
+    border-radius: 10px;
+    background-color: rgb(58, 56, 121);
     color: rgb(255, 255, 255);
+}
+
+.padding{
+    padding: 10px;
+    margin: 25px 25px 0 25px;
+}
+
+.padding2{
+    margin: 20px 0 5px 0 ;
+    padding: 10px;
+}
+
+#menu ul li:hover ul, #menu ul li.over ul{
+    display: block;
+}
+
+#lista1{
+    position: absolute;
+    top: 40px;
+    left: -90px;
+    display: none;
+    background-color: rgb(79, 77, 140);
+}
+
+#lista1 li{
+    display: block;
+    width: 100px;
+    padding: 5px;
+}
+
+#lista1 li:hover{
+    width: 132px;
+    background-color: rgb(58, 56, 121);
+}
+
+#logo{
+    float: left;
+    padding: 15px;
+    margin: 0 540px 0 30px;
 }
 
 /* CONFIGURAÇÕES DE CORPO */
 #corpo{
     background-color: rgb(198, 197, 227);
-    width: fit-content;
+    width: 100%;
 }
 
 #banner{
-    height: 2500px;
-    width: 100%;
+    height: 200px;
+}
+
+#produtos{
+    text-align: center;
+    background-color: rgb(198, 197, 227);
+    text-indent: 40px;
+    float: left;
+}
+
+#centro{
+    margin: 0 0 0 50px;
+}
+
+.produto{
+    float: left;
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 4px rgba(58, 56, 121, 0.5);
+    padding: 15px 35px;
+    margin: 20px 50px 35px 50px;
 }
 
 /* CONFIGURAÇÕES BOTÃO DE ACESSIBILIDADE */
@@ -45,15 +116,39 @@ body{
 
 /* CONFIGURAÇÕES DE RODAPÉ */
 #footer{
+    clear: both;
+    text-align: center;
     background-color: rgb(79, 77, 140);
     color: rgb(255, 255, 255);
+    width: 100%;
+    height: 80px;
+    padding: 30px;
 }
+
+#footer p a{
+    padding: 15px;
+    margin: 10px 20px 10px 20px;
+}
+
+    #reserva{
+        margin: 10px 0 10px 0;
+        padding: 15px;
+    }
 
 /* CONFIGURAÇÕES GERAIS */
 div{
     display: block;
 }
 
-ul,li,a{
+ul,li{
+    list-style: none;
+}
+
+a{
     text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+span{
+    font-size: 1.4em;
 }

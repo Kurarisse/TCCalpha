@@ -80,8 +80,7 @@ a.menu:hover{
 }
 
 #banner{
-    text-align: center;
-    height: 800px;
+    height: 200px;
 }
 
 #produtos{
@@ -107,7 +106,7 @@ a.menu:hover{
 /* CONFIGURAÇÕES BOTÃO DE ACESSIBILIDADE */
 #acessibilidade{
     border-radius: 50px;
-    padding: 3px;
+    padding: 5px;
     line-height: 10px;
     background-color: rgb(132, 130, 216);
     position: fixed;
@@ -131,10 +130,10 @@ a.menu:hover{
     margin: 10px 20px 10px 20px;
 }
 
-    #reserva{
-        margin: 10px 0 10px 0;
-        padding: 15px;
-    }
+#reserva{
+    margin: 10px 0 10px 0;
+    padding: 5px;
+}
 
 /* CONFIGURAÇÕES GERAIS */
 div{

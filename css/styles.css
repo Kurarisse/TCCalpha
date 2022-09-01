@@ -49,6 +49,14 @@ a.menu:hover{
     box-shadow: 4px 4px rgba(58, 56, 121, 0.5);
 }
 
+#menu ul .home a, #menu ul .lingerie a, #menu ul .sexShop a, #menu ul .cosmeticos a, #menu ul .sobre a, #menu ul .cadastro a{
+    border-radius: 10px;
+    background-color: rgb(58, 56, 121);
+    box-shadow: 3px 3px rgba(58, 56, 121, 0.5);
+    color: rgb(255, 255, 255);
+    cursor: text;
+}
+
 #lista1{
     position: absolute;
     top: 40px;

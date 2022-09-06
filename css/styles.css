@@ -55,6 +55,10 @@ body{
     color: rgb(255, 255, 255);
 }
 
+#lista1{
+    display: none;
+}
+
 /* ESTILO MENU HAMBÚRGUER */
 .menu_hamburguer{
     display: flex;
@@ -89,7 +93,8 @@ body{
 #produto{
     width: 100%;
     max-width: 1500px;
-    margin: 10px auto;
+    margin: 0 auto;
+    margin-bottom: 40px;
     text-align: center;
 }
 
@@ -166,9 +171,6 @@ body{
     border: 2px solid rgb(48, 48, 48);
     max-width: 1000px;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     color: rgb(0, 0, 0);
 }
 
@@ -176,7 +178,9 @@ body{
     border: 1px solid rgb(48, 48, 48);
     max-width: 300px;
     width: 100%;
+    margin: 20px;
 }
+
 .clientela p{
     padding: 5px;
     margin: 5px;

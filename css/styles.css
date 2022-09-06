@@ -137,9 +137,15 @@ body{
     padding: 10px 20px;
     margin: 0 0 20px 100px;
     border: 2px solid rgb(48, 48, 48);
+    box-shadow: 0 4px 8px 0 rgba(58, 56, 121, 0.5);
+    transition: 0.3s;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+}
+
+.produto:hover{
+    box-shadow: 0 8px 16px 0 rgba(58, 56, 121, 0.5);
 }
 
 .add_produto{

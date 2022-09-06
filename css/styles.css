@@ -90,7 +90,7 @@ body{
 /* ESTILO BANNER */
 .banner{
     width: 100%;
-    padding-top: 1000px;
+    padding-top: 970px;
 }
 
 /* ESTILO TÍTULO */
@@ -274,7 +274,7 @@ p{
 @media (max-width:1485px){
     .banner{
         width: 100%;
-        padding-top: 900px;
+        padding-top: 890px;
     }
 }
 
@@ -295,55 +295,48 @@ p{
 @media (max-width:1185px){
     .banner{
         width: 100%;
-        padding-top: 670px;
+        padding-top: 680px;
     }
 }
 
-@media (max-width:1050px){
+@media (max-width:1085px){
     .banner{
         width: 100%;
-        padding-top: 575px;
+        padding-top: 610px;
     }
 }
 
 @media (max-width:985px){
     .banner{
         width: 100%;
-        padding-top: 530px;
+        padding-top: 510px;
     }
 }
 
-@media (max-width:895px){
+@media (max-width:885px){
     .banner{
         width: 100%;
-        padding-top: 470px;
+        padding-top: 440px;
     }
 }
 
 @media (max-width:785px){
     .banner{
         width: 100%;
-        padding-top: 370px;
+        padding-top: 380px;
     }
 }
 
 @media (max-width:685px){
     .banner{
         width: 100%;
-        padding-top: 290px;
+        padding-top: 300px;
     }
 }
 
 @media (max-width:585px){
     .banner{
         width: 100%;
-        padding-top: 240px;
-    }
-}
-
-@media (max-width:535px){
-    .banner{
-        width: 100%;
-        padding-top: 210px;
+        padding-top: 230px;
     }
 }

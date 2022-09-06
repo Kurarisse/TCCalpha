@@ -47,6 +47,14 @@ body{
     color: rgb(255, 255, 255);
 }
 
+.home a, .lingerie a, .sexShop a, .cosmeticos a, .sobre a, .cadastro a {
+    border-radius: 10px;
+    background-color: rgb(58, 56, 121);
+    box-shadow: 3px 3px rgba(58, 56, 121, 0.5);
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+
 /* ESTILO MENU HAMBÚRGUER */
 .menu_hamburguer{
     display: flex;
@@ -80,9 +88,20 @@ body{
 #produto{
     width: 100%;
     max-width: 1500px;
-    margin: 0 auto;
+    margin: 10px auto;
     text-align: center;
     border: 1px solid black;
+}
+
+/* ESTILO TRANSIÇÃO AUMENTO */
+.expande{
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.expande:hover{
+    -webkit-transform:scale(1.5);
+    transform:scale(1.5);
 }
 
 .centro{
@@ -124,6 +143,7 @@ body{
     background-color: rgb(79, 77, 140);
     height: 100px;
     padding: 5px;
+    margin-top: 25px;
     box-shadow: 5px 0 20px rgb(58, 56, 121);
 }
 

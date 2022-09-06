@@ -19,7 +19,7 @@
 <body>
 
     <!-- INÍCIO CORPO -->
-    <div id="corpo">
+    <div id="corpo" class="corpo">
 
         <!-- INÍCIO CABEÇALHO -->
         <header class="cabecalho">
@@ -56,7 +56,23 @@
         <!-- BOTÃO DE ACESSIBILIDADE -->
         <!-- IMPORTANTE (OLHA BEM PRO CÓDIGO AQ TÁ Z) -->
         <!-- ver com a Giu o que colocar no mapa de acessibilidade -->
-        <div id="acessibilidade"><img src="img/acessibilidade.png" alt="Imagem relacionada à acessibilidade" title="Símbolo de acessibilidade"></div>
+        <div id="acessibilidade">
+            <img src="img/acessibilidade.png" alt="Imagem relacionada à acessibilidade" title="Símbolo de acessibilidade">
+            <ul class="acessibilidade">
+                <li>
+                    <label class="switch">
+                        <input type="checkbox" name="daltonico" id="daltonico">
+                            <span class="slider round"></span>
+                    </label><span class="daltonico">Adaptação para daltônicos</span>
+                </li>
+                <li>
+                    <label class="switch">
+                    <input type="checkbox" name="tamanho_fonte" id="tamanho_fonte">
+                        <span class="slider round"></span>
+                </label><span class="tamanho_fonte">Aumento de fonte</span>
+            </li>
+            </ul>
+        </div>
         <!-- FIM BOTÃO ACESSIBILIDADE -->
         
             

@@ -186,6 +186,22 @@ body{
     margin: 5px;
 }
 
+.intro{
+    max-width: 1400px;
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.principal{
+    max-width: 1400px;
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
 /* ESTILO BOTÃO DE ACESSIBILIDADE */
 #acessibilidade{
     border-radius: 50px;

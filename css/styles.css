@@ -1,165 +1,99 @@
-/* CONFIGURAÇÕES PADRÃO */
+/* CESTILOS PADRÃO */
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Kanit', sans-serif;
     font-size: 16px;
+    font-family: 'Kanit', sans-serif;
 }
 
+/* ESTILOS GERAIS CORPO */
 body{
-    width: 100%;
-    height: 100%;
-}
-
-/* CONFIGURAÇÕES CABEÇALHO */
-#cabecalho{
-    background-color: rgb(79, 77, 140);
-    width: 100%;
-    height: 90px;
-}
-
-#menu ul li{
-    position: relative;
-    float: left;
-}
-
-#menu ul li a{
-    display: block;
-}
-
-a.menu:hover{
-    border-radius: 10px;
-    background-color: rgb(58, 56, 121);
-    box-shadow: 3px 3px rgba(58, 56, 121, 0.5);
-    color: rgb(255, 255, 255);
-}
-
-.padding{
-    padding: 10px;
-    margin: 25px 25px 0 25px;
-}
-
-.padding2{
-    margin: 20px 0 5px 0 ;
-    padding: 10px;
-}
-
-#menu ul li:hover ul, #menu ul li.over ul{
-    display: block;
-    box-shadow: 4px 4px rgba(58, 56, 121, 0.5);
-}
-
-#menu ul .home a, #menu ul .lingerie a, #menu ul .sexShop a, #menu ul .cosmeticos a, #menu ul .sobre a, #menu ul .cadastro a{
-    border-radius: 10px;
-    background-color: rgb(58, 56, 121);
-    box-shadow: 3px 3px rgba(58, 56, 121, 0.5);
-    color: rgb(255, 255, 255);
-    cursor: text;
-}
-
-#lista1{
-    position: absolute;
-    top: 40px;
-    left: -90px;
-    display: none;
-    background-color: rgb(79, 77, 140);
-}
-
-#lista1 li{
-    display: block;
-    width: 100px;
-    padding: 5px;
-}
-
-#lista1 li:hover{
-    width: 132px;
-    background-color: rgb(58, 56, 121);
-}
-
-#logo{
-    float: left;
-    padding: 15px;
-    margin: 0 540px 0 30px;
-}
-
-/* CONFIGURAÇÕES DE CORPO */
-#corpo{
     background-color: rgb(198, 197, 227);
+}
+
+/* ESTILO CABEÇALHO */
+.cabecalho{
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-}
-
-#banner{
-    height: 420px;
-    text-indent: -80px;
-}
-
-#produtos{
-    text-align: center;
-    background-color: rgb(198, 197, 227);
-    text-indent: 40px;
-    height: 450px;
-    float: left;
-}
-
-#centro{
-    margin: 0 0 0 50px;
-}
-
-.produto{
-    float: left;
-    border: 2px solid black;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 5px 5px rgba(58, 56, 121, 0.5);
-    padding: 15px 35px;
-    margin: 20px 50px 35px 50px;
-}
-
-/* CONFIGURAÇÕES BOTÃO DE ACESSIBILIDADE */
-#acessibilidade{
-    border-radius: 50px;
-    padding: 5px;
-    line-height: 10px;
-    background-color: rgb(132, 130, 216);
-    box-shadow: 4px 4px rgba(58, 56, 121, 0.6);
-    position: fixed;
-    right: 60px;
-    bottom: 50px;
-}
-
-/* CONFIGURAÇÕES DE RODAPÉ */
-#footer{
-    clear: both;
-    text-align: center;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
     background-color: rgb(79, 77, 140);
-    color: rgb(255, 255, 255);
-    height: 80px;
-    padding: 30px;
+    box-shadow: 0px 5px 20px rgb(58, 56, 121);
 }
 
-#footer p a{
-    padding: 15px;
-    margin: 10px 20px 10px 20px;
-}
-
-#reserva{
-    margin: 10px 0 10px 0;
-    padding: 15px;
-}
-
-/* CONFIGURAÇÕES GERAIS */
-div{
-    display: block;
-}
-
-ul,li{
+.menu{
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
 }
 
-a{
+.menu li{
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.menu li a{
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
 
-span{
-    font-size: 1.4em;
+.menu li a:hover{
+    border-radius: 10px;
+    background-color: rgb(58, 56, 121);
+    box-shadow: 3px 3px rgba(58, 56, 121, 0.5);
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+
+/* ESTILO MENU HAMBÚRGUER */
+.menu_hamburguer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/* ESTILO LOGO */
+.logo{
+    width: 50px;
+    margin-left: 15px;
+    padding: 5px;
+}
+
+/* ESTILO CORPO */
+#corpo{
+    width: 100%;
+}
+
+/* ESTILO BANNER */
+.banner{
+    width: 100%;
+}
+
+/* ESTILO PRODUTOS */
+#produto{
+    width: 100%;
+    text-align: center;
+}
+
+.centro{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.produto{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    margin: 0 0 20px 100px;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.desc{
+    margin-left: 5px;
+    padding: 2px;
 }

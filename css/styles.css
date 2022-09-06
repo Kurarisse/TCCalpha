@@ -15,8 +15,9 @@ body{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 100px;
+    min-height: 100px;
     align-items: center;
+    height: fit-content;
     background-color: rgb(79, 77, 140);
     box-shadow: 0px 5px 20px rgb(58, 56, 121);
 }
@@ -25,9 +26,14 @@ body{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    align-items: center;
+    min-width: 400px;
+    max-width: 1200px;
 }
 
 .menu li{
+    display: flex;
+    flex-wrap: wrap;
     margin-left: 20px;
     padding: 10px;
 }
@@ -76,11 +82,15 @@ body{
 #corpo{
     width: 100%;
     margin-bottom: 150px;
+    background-image: url(../img/banner.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /* ESTILO BANNER */
 .banner{
     width: 100%;
+    padding-top: 1000px;
 }
 
 /* ESTILO TÍTULO */
@@ -96,6 +106,8 @@ body{
     margin: 0 auto;
     margin-bottom: 40px;
     text-align: center;
+    flex-wrap: wrap;
+    display: flex;
 }
 
 /* ESTILO TRANSIÇÃO AUMENTO */
@@ -248,4 +260,90 @@ body{
 /* ESTILOS GERAIS */
 p{
     font-size: 17px;
+}
+
+/* MEDIA ACESSIBILIDADE */
+@media (max-width:1070px){
+    #acessibilidade{
+        top: 80px;
+        right: 30px;
+    }
+}
+
+/* MEDIA CORPO (ARRUMAR) */
+@media (max-width:1485px){
+    .banner{
+        width: 100%;
+        padding-top: 900px;
+    }
+}
+
+@media (max-width:1385px){
+    .banner{
+        width: 100%;
+        padding-top: 810px;
+    }
+}
+
+@media (max-width:1285px){
+    .banner{
+        width: 100%;
+        padding-top: 750px;
+    }
+}
+
+@media (max-width:1185px){
+    .banner{
+        width: 100%;
+        padding-top: 670px;
+    }
+}
+
+@media (max-width:1050px){
+    .banner{
+        width: 100%;
+        padding-top: 575px;
+    }
+}
+
+@media (max-width:985px){
+    .banner{
+        width: 100%;
+        padding-top: 530px;
+    }
+}
+
+@media (max-width:895px){
+    .banner{
+        width: 100%;
+        padding-top: 470px;
+    }
+}
+
+@media (max-width:785px){
+    .banner{
+        width: 100%;
+        padding-top: 370px;
+    }
+}
+
+@media (max-width:685px){
+    .banner{
+        width: 100%;
+        padding-top: 290px;
+    }
+}
+
+@media (max-width:585px){
+    .banner{
+        width: 100%;
+        padding-top: 240px;
+    }
+}
+
+@media (max-width:535px){
+    .banner{
+        width: 100%;
+        padding-top: 210px;
+    }
 }

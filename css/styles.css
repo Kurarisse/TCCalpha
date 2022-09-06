@@ -47,7 +47,7 @@ body{
     color: rgb(255, 255, 255);
 }
 
-.home a, .lingerie a, .sexShop a, .cosmeticos a, .sobre a, .cadastro a {
+.home a, .lingerie a, .sexShop a, .cosmeticos a, .sobre a, .cadastro a, .insereProduto a{
     border-radius: 10px;
     background-color: rgb(58, 56, 121);
     box-shadow: 3px 3px rgba(58, 56, 121, 0.5);
@@ -74,14 +74,15 @@ body{
     width: 100%;
 }
 
-/* ESTILO TÍTULO */
-.titulo{
-    margin: 20px auto;
-}
-
 /* ESTILO BANNER */
 .banner{
     width: 100%;
+}
+
+/* ESTILO TÍTULO */
+.titulo{
+    margin: 20px auto;
+    text-align: center;
 }
 
 /* ESTILO PRODUTOS */
@@ -119,9 +120,66 @@ body{
     align-items: center;
 }
 
+.add_produto{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    margin: 0 0 20px 100px;
+    border: 2px solid rgb(48, 48, 48);
+}
+
 .desc{
     margin-left: 5px;
     padding: 2px;
+}
+
+.produto_insere{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    margin: 0 auto;
+    border: 2px solid rgb(48, 48, 48);
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+.info{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.info2 input,select,textarea{
+    margin-left: 35px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+/* ESTILO COMENTÁRIOS */
+.comentarios{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    margin: 30px auto;
+    border: 2px solid rgb(48, 48, 48);
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+.clientela{
+    border: 1px solid rgb(48, 48, 48);
+    max-width: 300px;
+    width: 100%;
+}
+.clientela p{
+    padding: 5px;
+    margin: 5px;
 }
 
 /* ESTILO BOTÃO DE ACESSIBILIDADE */

@@ -1,165 +1,438 @@
-/* CONFIGURAÇÕES PADRÃO */
+/* CESTILOS PADRÃO */
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Kanit', sans-serif;
-    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif, 'Arial';
 }
 
+/* ESTILOS GERAIS CORPO */
 body{
-    width: 100%;
-    height: 100%;
+    background-color: rgb(198, 197, 227);
 }
 
-/* CONFIGURAÇÕES CABEÇALHO */
-#cabecalho{
+/* ESTILO CABEÇALHO */
+.cabecalho{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100px;
+    align-items: center;
+    height: fit-content;
     background-color: rgb(79, 77, 140);
-    width: 100%;
-    height: 90px;
+    box-shadow: 0px 5px 20px rgb(58, 56, 121);
 }
 
-#menu ul li{
-    position: relative;
-    float: left;
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    min-width: 400px;
+    max-width: 1200px;
 }
 
-#menu ul li a{
-    display: block;
-}
-
-a.menu:hover{
-    border-radius: 10px;
-    background-color: rgb(58, 56, 121);
-    box-shadow: 3px 3px rgba(58, 56, 121, 0.5);
-    color: rgb(255, 255, 255);
-}
-
-.padding{
-    padding: 10px;
-    margin: 25px 25px 0 25px;
-}
-
-.padding2{
-    margin: 20px 0 5px 0 ;
+.menu li{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
     padding: 10px;
 }
 
-#menu ul li:hover ul, #menu ul li.over ul{
-    display: block;
-    box-shadow: 4px 4px rgba(58, 56, 121, 0.5);
+.menu li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
 }
 
-#menu ul .home a, #menu ul .lingerie a, #menu ul .sexShop a, #menu ul .cosmeticos a, #menu ul .sobre a, #menu ul .cadastro a{
+.hover a:hover{
     border-radius: 10px;
     background-color: rgb(58, 56, 121);
     box-shadow: 3px 3px rgba(58, 56, 121, 0.5);
+    padding: 10px;
     color: rgb(255, 255, 255);
-    cursor: text;
+}
+
+.home a, .lingerie a, .sexShop a, .cosmeticos a, .sobre a, .cadastro a, .insereProduto a{
+    border-radius: 10px;
+    background-color: rgb(58, 56, 121);
+    box-shadow: 3px 3px rgba(58, 56, 121, 0.5);
+    padding: 10px;
+    color: rgb(255, 255, 255);
 }
 
 #lista1{
-    position: absolute;
-    top: 40px;
-    left: -90px;
     display: none;
-    background-color: rgb(79, 77, 140);
 }
 
-#lista1 li{
-    display: block;
-    width: 100px;
+/* ESTILO MENU HAMBÚRGUER */
+.menu_hamburguer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/* ESTILO LOGO */
+.logo{
+    width: 50px;
+    margin: 5px 25px 0 15px;
     padding: 5px;
 }
 
-#lista1 li:hover{
-    width: 132px;
-    background-color: rgb(58, 56, 121);
+.img_logo{
+    max-width: 80px;
+    border-radius: 15px;
+    padding: 5px;
 }
 
-#logo{
-    float: left;
-    padding: 15px;
-    margin: 0 540px 0 30px;
-}
-
-/* CONFIGURAÇÕES DE CORPO */
+/* ESTILO CORPO */
 #corpo{
-    background-color: rgb(198, 197, 227);
     width: 100%;
+    margin-bottom: 150px;
 }
 
-#banner{
-    height: 420px;
-    text-indent: -80px;
+.corpo{
+    width: 100%;
+    margin-bottom: 150px;
+    background-image: url(../img/banner.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-#produtos{
+/* ESTILO BANNER */
+.banner{
+    width: 100%;
+    padding-top: 970px;
+}
+
+/* ESTILO TÍTULO */
+.titulo{
+    margin: 20px auto;
     text-align: center;
-    background-color: rgb(198, 197, 227);
-    text-indent: 40px;
-    height: 450px;
-    float: left;
 }
 
-#centro{
-    margin: 0 0 0 50px;
+/* ESTILO PRODUTOS */
+#produto{
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+/* ESTILO TRANSIÇÃO AUMENTO */
+.expande{
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.expande:hover{
+    -webkit-transform:scale(1.5);
+    transform:scale(1.5);
+}
+
+.centro{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .produto{
-    float: left;
-    border: 2px solid black;
     background-color: rgb(255, 255, 255);
-    box-shadow: 5px 5px rgba(58, 56, 121, 0.5);
-    padding: 15px 35px;
-    margin: 20px 50px 35px 50px;
+    padding: 10px 20px;
+    margin: 0 0 25px 100px;
+    border: 2px solid rgb(48, 48, 48);
+    box-shadow: 0 4px 8px 0 rgba(58, 56, 121, 0.5);
+    transition: 0.3s;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-/* CONFIGURAÇÕES BOTÃO DE ACESSIBILIDADE */
+.produto:hover{
+    box-shadow: 0 8px 16px 0 rgba(58, 56, 121, 0.8);
+}
+
+.add_produto{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    margin: 0 0 20px 100px;
+    border: 2px solid rgb(48, 48, 48);
+}
+
+.desc{
+    margin-left: 5px;
+    padding: 2px;
+}
+
+.produto_insere{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    margin: 0 auto;
+    border: 2px solid rgb(48, 48, 48);
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 8px 16px 0 rgba(58, 56, 121, 0.8);
+}
+
+.info{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.info2 input,select,textarea{
+    margin-left: 35px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+/* ESTILO COMENTÁRIOS */
+.comentarios{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    margin: 30px auto;
+    border: 2px solid rgb(48, 48, 48);
+    max-width: 1000px;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 8px 16px 0 rgba(58, 56, 121, 0.8);
+}
+
+.clientela{
+    border: 1px solid rgb(48, 48, 48);
+    max-width: 300px;
+    width: 100%;
+    margin: 20px;
+}
+
+.clientela p{
+    padding: 5px;
+    margin: 5px;
+}
+
+.intro{
+    max-width: 1400px;
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.principal{
+    max-width: 1400px;
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* ESTILO BOTÃO DE ACESSIBILIDADE */
 #acessibilidade{
     border-radius: 50px;
-    padding: 5px;
+    padding: 10px;
     line-height: 10px;
     background-color: rgb(132, 130, 216);
     box-shadow: 4px 4px rgba(58, 56, 121, 0.6);
     position: fixed;
-    right: 60px;
-    bottom: 50px;
+    top: 20px;
+    right: 30px;
 }
 
-/* CONFIGURAÇÕES DE RODAPÉ */
+.acessibilidade{
+    list-style: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+.acessibilidade li{
+    padding: 5px;
+    margin: 5px;
+}
+
+.daltonico{
+    padding: 5px;
+    margin-left: 2px;
+}
+
+.tamanho_fonte{
+    padding: 5px;
+    margin-left: 2px;
+}
+
+/* EFEITO CONTRASTE DALTÔNICOS */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 38px;
+    height: 20px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    top: 1px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: rgb(79, 77, 140);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(19px);
+    -ms-transform: translateX(19px);
+    transform: translateX(19px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+/* ESTILO RODAPÉ */
 #footer{
-    clear: both;
     text-align: center;
     background-color: rgb(79, 77, 140);
-    color: rgb(255, 255, 255);
-    height: 80px;
-    padding: 30px;
+    height: 100px;
+    padding: 0px;
+    margin-top: 25px;
+    box-shadow: 5px 0 20px rgb(58, 56, 121);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+#footer p{
+    padding: 5px;
+    margin-top: 10px;
 }
 
 #footer p a{
-    padding: 15px;
-    margin: 10px 20px 10px 20px;
-}
-
-#reserva{
-    margin: 10px 0 10px 0;
-    padding: 15px;
-}
-
-/* CONFIGURAÇÕES GERAIS */
-div{
-    display: block;
-}
-
-ul,li{
-    list-style: none;
-}
-
-a{
+    padding: 10px;
+    margin-left: 10px;
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
 
-span{
-    font-size: 1.4em;
+.reservado{
+    font-size: 17px;
+    padding: 5px;
+}
+
+/* ESTILOS GERAIS */
+p{
+    font-size: 17px;
+}
+
+/* MEDIA ACESSIBILIDADE */
+@media (max-width:1070px){
+    #acessibilidade{
+        top: 80px;
+        right: 30px;
+    }
+}
+
+/* MEDIA CORPO (ARRUMAR) */
+@media (max-width:1485px){
+    .banner{
+        width: 100%;
+        padding-top: 890px;
+    }
+}
+
+@media (max-width:1385px){
+    .banner{
+        width: 100%;
+        padding-top: 810px;
+    }
+}
+
+@media (max-width:1285px){
+    .banner{
+        width: 100%;
+        padding-top: 750px;
+    }
+}
+
+@media (max-width:1185px){
+    .banner{
+        width: 100%;
+        padding-top: 680px;
+    }
+}
+
+@media (max-width:1085px){
+    .banner{
+        width: 100%;
+        padding-top: 610px;
+    }
+}
+
+@media (max-width:985px){
+    .banner{
+        width: 100%;
+        padding-top: 510px;
+    }
+}
+
+@media (max-width:885px){
+    .banner{
+        width: 100%;
+        padding-top: 440px;
+    }
+}
+
+@media (max-width:785px){
+    .banner{
+        width: 100%;
+        padding-top: 380px;
+    }
+}
+
+@media (max-width:685px){
+    .banner{
+        width: 100%;
+        padding-top: 300px;
+    }
+}
+
+@media (max-width:585px){
+    .banner{
+        width: 100%;
+        padding-top: 230px;
+    }
 }

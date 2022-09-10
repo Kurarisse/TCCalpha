@@ -20,34 +20,55 @@
         <!-- INÍCIO CABEÇALHO -->
         <header class="cabecalho">
 
-            <!-- LOGO -->
-            <div class="logo">
-                <a href="index.html"><img src="img/calcinhas.png" alt="Imagem de logo" title="Imagem de logo"></a>
-            </div>
-
             <!-- INÍCIO MENU -->
-                <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="lingeries.html">Lingeries</a></li>
-                    <li><a href="sexShop.html">Sex shop</a></li>
-                    <li><a href="cosmeticos.html">Cosméticos</a></li>
-                    <li class="sobre"><a href="sobre.html">Sobre nós</a></li>
-                    <li><a href="cadastro.html">Cadastro</a></li>
-                    <li class="padding2">
-                        <img src="img/menu.png" alt="Imagem menu hambúrguer" title="Menu tipo hambúrguer">
-                        <ul id="lista1">
-                            <li><a href="carrinho.html"><img src="img/carrinho.png" alt="Imagem de um carrinho de compras" title="Carrinho de compras">Carrinho</a></li>
-                            <li><a href="perfil.html"><img src="img/perfil.png" alt="Imagem de um boneco de perfil" title="Boneco de perfil">Perfil</a></li> 
-                            <li><a href="insereProduto.html">Cadastro de produtos</a></li>                           
-                            <!-- ADICIONAR FUNÇÃO ONCLICK -->
-                            <li><img src="img/sair.png" alt="Imagem de símbolo para sair da página" title="Símbolo para sair da página">Sair</li>
-                        </ul>
-                    </li>
-                </ul>
+            <ul class="menu">
+                <li class="logo">
+                    <a href="index.html"><img src="img/logo_roxo.jpg" alt="Imagem de logo" title="Imagem de logo" class="img_logo"></a>
+                </li>
+                <li class="menu_hamburguer">
+                    <img src="img/menu.png" alt="Imagem menu hambúrguer" title="Menu tipo hambúrguer">
+                    <ul id="lista1">
+                        <li><a href="carrinho.html"><img src="img/carrinho.png" alt="Imagem de um carrinho de compras" title="Carrinho de compras">Carrinho</a></li>
+                        <li><a href="perfil.html"><img src="img/perfil.png" alt="Imagem de um boneco de perfil" title="Boneco de perfil">Perfil</a></li> 
+                        <li><a href="insereProduto.html">Cadastro de produtos</a></li>                           
+                        <!-- ADICIONAR FUNÇÃO ONCLICK -->
+                        <li><img src="img/sair.png" alt="Imagem de símbolo para sair da página" title="Símbolo para sair da página">Sair</li>
+                    </ul>
+                </li>
+                <li class="hover"><a href="index.html">Home</a></li>
+                <li class="hover"><a href="lingeries.html">Lingeries</a></li>
+                <li class="hover"><a href="sexShop.html">Sex shop</a></li>
+                <li class="hover"><a href="cosmeticos.html">Cosméticos</a></li>
+                <li class="sobre hover"><a href="sobre.html">Sobre nós</a></li>                    
+                <li class="hover"><a href="cadastro.html">Cadastro</a></li>
+                <li class="hover"><a href="insereProduto.html">Cadastro de produtos</a></li> 
+            </ul>
             <!-- FIM MENU -->
 
         </header>
         <!-- FIM CABEÇALHO -->
+
+        <!-- BOTÃO DE ACESSIBILIDADE -->
+        <!-- IMPORTANTE (OLHA BEM PRO CÓDIGO AQ TÁ Z) -->
+        <!-- ver com a Giu o que colocar no mapa de acessibilidade -->
+        <div id="acessibilidade">
+            <img src="img/acessibilidade.png" alt="Imagem relacionada à acessibilidade" title="Símbolo de acessibilidade">
+            <ul class="acessibilidade">
+                <li>
+                    <label class="switch">
+                        <input type="checkbox" name="daltonico" id="daltonico">
+                            <span class="slider round"></span>
+                    </label><span class="daltonico">Adaptação para daltônicos</span>
+                </li>
+                <li>
+                    <label class="switch">
+                    <input type="checkbox" name="tamanho_fonte" id="tamanho_fonte">
+                        <span class="slider round"></span>
+                </label><span class="tamanho_fonte">Aumento de fonte</span>
+            </li>
+            </ul>
+        </div>
+        <!-- FIM BOTÃO ACESSIBILIDADE -->
 
         <!-- INÍCIO CONTEÚDO SOBRE NÓS -->
         <div class="intro">
@@ -56,12 +77,6 @@
 
         <div class="principal">Conteúdo principal(história, fundadores, datas específicas...)</div>
         <!-- FIM CONTEÚDO SOBRE NÓS -->
-
-        <!-- BOTÃO DE ACESSIBILIDADE -->
-        IMPORTANTE (OLHA BEM PRO CÓDIGO AQ TÁ Z)
-        <!-- ver com a Giu o que colocar no mapa de acessibilidade -->
-        <div id="acessibilidade"><img src="img/acessibilidade.png" alt="Imagem relacionada à acessibilidade" title="Símbolo de acessibilidade"></div>
-        <!-- FIM BOTÃO ACESSIBILIDADE -->
 
         <!-- RODAPÉ -->
         <div id="footer">

@@ -81,21 +81,17 @@ body{
 /* ESTILO CORPO */
 #corpo{
     width: 100%;
-    margin-bottom: 150px;
-}
-
-.corpo{
-    width: 100%;
-    margin-bottom: 150px;
-    background-image: url(../img/banner.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* ESTILO BANNER */
 .banner{
     width: 100%;
-    padding-top: 970px;
+    z-index: -1;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* ESTILO TÍTULO */
@@ -317,14 +313,11 @@ body{
 #footer{
     text-align: center;
     background-color: rgb(79, 77, 140);
-    height: 100px;
-    padding: 0px;
+    height: 120px;
+    padding-top: 30px;
     margin-top: 25px;
     box-shadow: 5px 0 20px rgb(58, 56, 121);
-    position: fixed;
     width: 100%;
-    bottom: 0;
-    left: 0;
 }
 
 #footer p{
@@ -354,76 +347,5 @@ p{
     #acessibilidade{
         top: 80px;
         right: 30px;
-    }
-}
-
-/* MEDIA CORPO (ARRUMAR) */
-@media (max-width:1485px){
-    .banner{
-        width: 100%;
-        padding-top: 890px;
-    }
-}
-
-@media (max-width:1385px){
-    .banner{
-        width: 100%;
-        padding-top: 810px;
-    }
-}
-
-@media (max-width:1285px){
-    .banner{
-        width: 100%;
-        padding-top: 750px;
-    }
-}
-
-@media (max-width:1185px){
-    .banner{
-        width: 100%;
-        padding-top: 680px;
-    }
-}
-
-@media (max-width:1085px){
-    .banner{
-        width: 100%;
-        padding-top: 610px;
-    }
-}
-
-@media (max-width:985px){
-    .banner{
-        width: 100%;
-        padding-top: 510px;
-    }
-}
-
-@media (max-width:885px){
-    .banner{
-        width: 100%;
-        padding-top: 440px;
-    }
-}
-
-@media (max-width:785px){
-    .banner{
-        width: 100%;
-        padding-top: 380px;
-    }
-}
-
-@media (max-width:685px){
-    .banner{
-        width: 100%;
-        padding-top: 300px;
-    }
-}
-
-@media (max-width:585px){
-    .banner{
-        width: 100%;
-        padding-top: 230px;
     }
 }

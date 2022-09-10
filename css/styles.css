@@ -1,4 +1,4 @@
-/* CESTILOS PADRÃO */
+/* ESTILOS PADRÃO */
 *{
     padding: 0;
     margin: 0;
@@ -74,13 +74,13 @@ body{
 
 /* ESTILO LOGO */
 .logo{
-    width: 50px;
+    width:60px;
     margin: 5px 25px 0 15px;
     padding: 5px;
 }
 
 .img_logo{
-    max-width: 80px;
+    max-width: 95px;
     border-radius: 15px;
     padding: 5px;
 }
@@ -152,10 +152,8 @@ body{
 }
 
 .add_produto{
-    background-color: rgb(255, 255, 255);
     padding: 10px 20px;
-    margin: 0 0 20px 100px;
-    border: 2px solid rgb(48, 48, 48);
+    margin: 0 auto;
 }
 
 .desc{
@@ -322,9 +320,8 @@ body{
 #footer{
     text-align: center;
     background-color: rgb(79, 77, 140);
-    height: 120px;
-    padding-top: 30px;
-    margin-top: 25px;
+    height: 130px;
+    padding-top: 20px;
     box-shadow: 5px 0 20px rgb(58, 56, 121);
     width: 100%;
 }
@@ -349,6 +346,11 @@ body{
 /* ESTILOS GERAIS */
 p{
     font-size: 17px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
 }
 
 /* MEDIA ACESSIBILIDADE */

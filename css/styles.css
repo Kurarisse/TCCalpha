@@ -154,6 +154,7 @@ body{
 .add_produto{
     padding: 10px 20px;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .desc{
@@ -321,13 +322,12 @@ body{
     text-align: center;
     background-color: rgb(79, 77, 140);
     height: 130px;
-    padding-top: 20px;
+    padding-top: 25px;
     box-shadow: 5px 0 20px rgb(58, 56, 121);
     width: 100%;
 }
 
 #footer p{
-    padding: 5px;
     margin-top: 10px;
 }
 

@@ -30,23 +30,23 @@
 
             <!-- INÍCIO MENU -->
             <nav id="nav">
-                    <button id="btnCelular" aria-label="Abrir menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false"><img src="img/menu.png" alt="Imagem menu hambúrguer" title="Menu de links das páginas"><span>Menu</span></button>
+                <button id="btnCelular" aria-label="Abrir menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false"><img src="img/menu.png" alt="Imagem menu hambúrguer" title="Menu de links das páginas"><span>Menu</span></button>
 
-                <ul class="menu" role="menu">
-                    <li class="hover"><a href="index.php" title="Link para a página de início">Home</a></li>
-                    <li class="hover"><a href="lingeries.php" title="Link para a página de produtos de lingerie">Lingeries</a></li>
-                    <li class="hover"><a href="sexShop.php" title="Link para a página de produtos de sex shop">Sex shop</a></li>
-                    <li class="hover"><a href="cosmeticos.php" title="Link para a página de produtos de cosméticos">Cosméticos</a></li>
-                    <li class="hover"><a href="sobre.php" title="Link para a página com informações sobre a empresa">Sobre nós</a></li>                    
-                    <li class="hover"><a href="cadastro.php" title="Link para a página de cadastro">Cadastro</a></li>
-                    <li class="hover"><a href="insereProduto.php" title="Link para a página de cadastro de produtos">Cadastro de produtos</a></li>
-                    <li class="menu_hamburguer">
-                    <li class="hover"><a href="carrinho.php"><img src="img/carrinho.png" alt="Imagem de um carrinho de compras" title="Carrinho de compras"><span>Carrinho</span></a></li>
-                    <li class="hover"><a href="perfil.php"><img src="img/perfil.png" alt="Imagem de um boneco de perfil" title="Boneco de perfil"><span>Perfil</span></a></li>                          
-                    <!-- ADICIONAR FUNÇÃO ONCLICK -->
-                    <li class="hover"><a href=""><img src="img/sair.png" alt="Imagem de símbolo para sair da página" title="Símbolo para sair da página"><span>Sair</span></a></li>
-                    </li> 
-                </ul>
+                    <ul class="menu" role="menu">
+                        <li class="hover"><a href="index.php" title="Link para a página de início">Home</a></li>
+                        <li class="hover"><a href="lingeries.php" title="Link para a página de produtos de lingerie">Lingeries</a></li>
+                        <li class="hover"><a href="sexShop.php" title="Link para a página de produtos de sex shop">Sex shop</a></li>
+                        <li class="hover"><a href="cosmeticos.php" title="Link para a página de produtos de cosméticos">Cosméticos</a></li>
+                        <li class="hover"><a href="sobre.php" title="Link para a página com informações sobre a empresa">Sobre nós</a></li>                    
+                        <li class="hover"><a href="cadastro.php" title="Link para a página de cadastro">Cadastro</a></li>
+                        <li class="hover"><a href="insereProduto.php" title="Link para a página de cadastro de produtos">Cadastro de produtos</a></li>
+                        <li class="menu_hamburguer">
+                        <li class="hover"><a href="carrinho.php"><img src="img/carrinho.png" alt="Imagem de um carrinho de compras" title="Carrinho de compras"><span>Carrinho</span></a></li>
+                        <li class="hover"><a href="perfil.php"><img src="img/perfil.png" alt="Imagem de um boneco de perfil" title="Boneco de perfil"><span>Perfil</span></a></li>                          
+                        <!-- ADICIONAR FUNÇÃO ONCLICK -->
+                        <li class="hover"><a href=""><img src="img/sair.png" alt="Imagem de símbolo para sair da página" title="Símbolo para sair da página"><span>Sair</span></a></li>
+                        </li> 
+                    </ul>
             </nav>
             <!-- FIM MENU -->
 
@@ -75,98 +75,98 @@
         <!-- FIM BOTÃO ACESSIBILIDADE -->
         
             
-            <!-- BANNER DE PRODUTOS ROTATIVOS -->
-            <div class="banner">
-                <img src="img/banner.png" alt="Imagem para visualização" width="100%" max-width="800px" min-width="300px" title="Banner aleatório para visualização">
-            </div>
-            <!-- FIM BANNER ROTATIVO -->
+        <!-- BANNER DE PRODUTOS ROTATIVOS -->
+        <div class="banner">
+            <img src="img/banner.png" alt="Imagem para visualização" width="100%" max-width="800px" min-width="300px" title="Banner aleatório para visualização">
+        </div>
+        <!-- FIM BANNER ROTATIVO -->
 
-            <!-- INÍCIO DISPONIBILIZAÇÃO DE PRODUTOS PRINCIPAIS -->
-            <div id="produto">
+        <!-- INÍCIO DISPONIBILIZAÇÃO DE PRODUTOS PRINCIPAIS -->
+        <div id="produto">
 
-                <h2 class="titulo">Principais produtos</h2>
-                <div class="centro">
+            <h2 class="titulo">Principais produtos</h2>
+            <div class="centro">
 
-                        <div class="produto">   
-                            <a href="produtoAumentado.php">
-                                <img src="img/product.png" alt="Imagem do produto" class="expande">
-                                <div class="desc">
-                                <h3>Nome produto</h3>
-                                <p>Breve descrição</p>
-                            </a>
-                                </div>
-                        </div>
-
-                        <div class="produto">   
-                            <a href="produtoAumentado.php">
-                                <img src="img/product.png" alt="Imagem do produto" class="expande">
-                                <div class="desc">
-                                <h3>Nome produto</h3>
-                                <p>Breve descrição</p>
-                            </a>
-                                </div>
-                        </div>
-
-                        <div class="produto">   
-                            <a href="produtoAumentado.php">
-                                <img src="img/product.png" alt="Imagem do produto" class="expande">
-                                <div class="desc">
-                                <h3>Nome produto</h3>
-                                <p>Breve descrição</p>
-                            </a>
-                                </div>
-                        </div>
-
-                        <div class="produto">   
-                            <a href="produtoAumentado.php">
-                                <img src="img/product.png" alt="Imagem do produto" class="expande">
-                                <div class="desc">
-                                <h3>Nome produto</h3>
-                                <p>Breve descrição</p>
-                            </a>
-                                </div>
-                        </div>
-
-                        <div class="produto">   
-                            <a href="produtoAumentado.php">
-                                <img src="img/product.png" alt="Imagem do produto" class="expande">
-                                <div class="desc">
-                                <h3>Nome produto</h3>
-                                <p>Breve descrição</p>
-                            </a>
-                                </div>
-                        </div>
-
-                        <div class="produto">   
-                            <a href="produtoAumentado.php">
-                                <img src="img/product.png" alt="Imagem do produto" class="expande">
-                                <div class="desc">
-                                <h3>Nome produto</h3>
-                                <p>Breve descrição</p>
-                            </a>
-                                </div>
-                        </div>
-
-                        <div class="produto">   
-                            <a href="produtoAumentado.php">
-                                <img src="img/product.png" alt="Imagem do produto" class="expande">
-                                <div class="desc">
-                                <h3>Nome produto</h3>
-                                <p>Breve descrição</p>
-                            </a>
-                                </div>
-                        </div>
-
-                        <div class="produto">   
-                            <a href="produtoAumentado.php">
-                                <img src="img/product.png" alt="Imagem do produto" class="expande">
-                                <div class="desc">
-                                <h3>Nome produto</h3>
-                                <p>Breve descrição</p>
-                            </a>
-                                </div>
+                <div class="produto">   
+                    <a href="produtoAumentado.php">
+                        <img src="img/product.png" alt="Imagem do produto" class="expande">
+                        <div class="desc">
+                        <h3>Nome produto</h3>
+                        <p>Breve descrição</p>
+                    </a>
                         </div>
                 </div>
+
+                <div class="produto">   
+                    <a href="produtoAumentado.php">
+                        <img src="img/product.png" alt="Imagem do produto" class="expande">
+                        <div class="desc">
+                        <h3>Nome produto</h3>
+                        <p>Breve descrição</p>
+                    </a>
+                        </div>
+                </div>
+
+                <div class="produto">   
+                    <a href="produtoAumentado.php">
+                        <img src="img/product.png" alt="Imagem do produto" class="expande">
+                        <div class="desc">
+                        <h3>Nome produto</h3>
+                        <p>Breve descrição</p>
+                    </a>
+                        </div>
+                </div>
+
+                <div class="produto">   
+                    <a href="produtoAumentado.php">
+                        <img src="img/product.png" alt="Imagem do produto" class="expande">
+                        <div class="desc">
+                        <h3>Nome produto</h3>
+                        <p>Breve descrição</p>
+                    </a>
+                        </div>
+                </div>
+
+                <div class="produto">   
+                    <a href="produtoAumentado.php">
+                        <img src="img/product.png" alt="Imagem do produto" class="expande">
+                        <div class="desc">
+                        <h3>Nome produto</h3>
+                        <p>Breve descrição</p>
+                    </a>
+                        </div>
+                </div>
+
+                <div class="produto">   
+                    <a href="produtoAumentado.php">
+                        <img src="img/product.png" alt="Imagem do produto" class="expande">
+                        <div class="desc">
+                        <h3>Nome produto</h3>
+                        <p>Breve descrição</p>
+                    </a>
+                        </div>
+                </div>
+
+                <div class="produto">   
+                    <a href="produtoAumentado.php">
+                        <img src="img/product.png" alt="Imagem do produto" class="expande">
+                        <div class="desc">
+                        <h3>Nome produto</h3>
+                        <p>Breve descrição</p>
+                    </a>
+                        </div>
+                </div>
+
+                <div class="produto">   
+                    <a href="produtoAumentado.php">
+                        <img src="img/product.png" alt="Imagem do produto" class="expande">
+                        <div class="desc">
+                        <h3>Nome produto</h3>
+                        <p>Breve descrição</p>
+                    </a>
+                        </div>
+                </div>
+            </div>
             </div>
             <!-- FIM DISPONIBILIZAÇÃO DE PRODUTOS PRINCIPAIS -->
 

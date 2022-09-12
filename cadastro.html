@@ -37,7 +37,7 @@
                         <li class="hover"><a href="sexShop.html" title="Link para a página de produtos de sex shop">Sex shop</a></li>
                         <li class="hover"><a href="cosmeticos.html" title="Link para a página de produtos de cosméticos">Cosméticos</a></li>
                         <li class="hover"><a href="sobre.html" title="Link para a página com informações sobre a empresa">Sobre nós</a></li>                    
-                        <li class="hover"><a href="cadastro.html" title="Link para a página de cadastro">Cadastro</a></li>
+                        <li class="hover"><a href="cadastro.html" title="Link para a página de cadastro">Cadastro/Login</a></li>
                         <li class="hover"><a href="insereProduto.html" title="Link para a página de cadastro de produtos">Cadastro de produtos</a></li>
                         <li class="menu_hamburguer">
                         <li class="hover"><a href="carrinho.html"><img src="img/carrinho.png" alt="Imagem de um carrinho de compras" title="Carrinho de compras"><span>Carrinho</span></a></li>
@@ -75,8 +75,59 @@
         </div>
         <!-- FIM BOTÃO ACESSIBILIDADE -->
 
-        OBSERVAÇÃO NO CÓDIGO
-        <!-- VERIFICAR COMO FAZ .BLANK COM PÁGINAS SEM PHP (como o login do google) -->
+        <!-- INÍCIO ÁREA CADASTRO DE PRODUTOS -->
+        ARRUMAR
+        <div class="area">
+            <div class="addDoc">
+                <img src="img/addProfile.svg" alt="Imagem de pessoa inserindo documentos" title="Imagem de pessoa inserindo documentos">
+            </div>
+
+            <div class="formulario">
+                <form action="">
+                    <div class="formCabeca">
+                        <div class="titulo2">
+                            <h1>Cadastre-se</h1>
+                        </div>
+                    </div>
+
+                    <div class="boxes">
+                        <div class="box">
+                            <label for="nomeProduto">Nome do produto</label>
+                            <input type="text" name="nomeProduto" id="nomeProduto" placeholder="Nome do produto" required>
+                        </div>
+
+                        <div class="box">
+                            <label for="quantidadeProduto">Quantidade de produtos</label>
+                            <input type="text" name="quantidadeProduto" id="quantidadeProduto" placeholder="Quantidade de produtos" required>
+                        </div>
+
+                        <div class="box">
+                            <label for="tamanhoProduto">Tamanho do produto</label>
+                            <select name="tamanhoProduto" id="tamanhoProduto" default="tamanho" required>
+                                <option value="tamanho">Tamanho</option>
+                                <option value="PP">PP</option>
+                                <option value="P">P</option>
+                                <option value="M">M</option>
+                                <option value="G">G</option>
+                                <option value="GG">GG</option>
+                                <option value="XG">XG</option>
+                                <option value="XXG">XXG</option>
+                            </select>
+                        </div>
+
+                        <div class="box  descProduto">
+                            <label for="descProduto">Descrição do produto</label>
+                            <input type="text" name="descProduto" id="descProduto" placeholder="Descrição do produto" required>
+                        </div>
+                    </div>
+
+                    <div class="butao">
+                        <button><a href="#">Cadastrar</a></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- FIM ÁREA CADASTRO DE PRODUTOS -->
 
     </div>
     <!-- FIM CORPO -->

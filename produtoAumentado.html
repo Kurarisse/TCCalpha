@@ -18,7 +18,7 @@
 </head>
 <body>
     <!-- INÍCIO CORPO -->
-    <div id="corpo">
+    <div id="corpo" class="corpo">
 
         <!-- INÍCIO CABEÇALHO -->
         <header class="cabecalho">
@@ -37,7 +37,7 @@
                         <li class="hover"><a href="sexShop.html" title="Link para a página de produtos de sex shop">Sex shop</a></li>
                         <li class="hover"><a href="cosmeticos.html" title="Link para a página de produtos de cosméticos">Cosméticos</a></li>
                         <li class="hover"><a href="sobre.html" title="Link para a página com informações sobre a empresa">Sobre nós</a></li>                    
-                        <li class="hover"><a href="cadastro.html" title="Link para a página de cadastro">Cadastro</a></li>
+                        <li class="hover"><a href="cadastro.html" title="Link para a página de cadastro">Cadastro/Login</a></li>
                         <li class="hover"><a href="insereProduto.html" title="Link para a página de cadastro de produtos">Cadastro de produtos</a></li>
                         <li class="menu_hamburguer">
                         <li class="hover"><a href="carrinho.html"><img src="img/carrinho.png" alt="Imagem de um carrinho de compras" title="Carrinho de compras"><span>Carrinho</span></a></li>
@@ -75,97 +75,130 @@
         </div>
         <!-- FIM BOTÃO ACESSIBILIDADE -->
 
-            <!-- INÍCIO DISPONIBILIZAÇÃO DE PRODUTOS PRINCIPAIS -->
-            <div class="add_produto">
+        <!-- INÍCIO ÁREA CADASTRO DE PRODUTOS -->
+            <div class="areaComent">
+                <div class="addDocComent" style="background-color:#fff;">
+                    <img src="img/product.png" alt="Imagem do produto" title="Imagem do produto">
+                </div>
 
-                <h2 class="titulo">Cadastro de produtos</h2>
-                <div class="centro">
-                
-                    <div class="produto_insere">
-
-                        <div class="info">
-                            <img src="img/product.png" alt="Imagem do produto" width="200px"><br>
-                            <input type="file" name="imagem_produto" id="imagem_produto">
-
-                            <div class="info2">
-                            <input type="text" name="nome_produto" id="nome_produto" placeholder="Nome do produto"><br>
-                            <select name="codigo_produto" id="codigo_produto">
-                                <option value="codigo_produto">Código do produto</option>
-                                <option value="001">001</option>
-                                <option value="002">002</option>
-                                <option value="003">003</option>
-                                <option value="004">004</option>
-                                <option value="005">005</option>
-                                <option value="006">006</option>
-                                <option value="007">007</option>
-                                <option value="008">008</option>
-                                <option value="009">009</option>
-                                <option value="010">010</option>
-                            </select><br>
-                            <input type="number" name="quantidade_entrada" id="quantidade_entrada" placeholder="Quantidade de entrada"><br>
-                            <select name="fabricante" id="fabricante">
-                                <option value="fabricante">Fabricante</option>
-                                <option value="cea">C&A</option>
-                                <option value="renner">Renner</option>
-                                <option value="zara">Zara</option>
-                                <option value="hem">H&M</option>
-                                <option value="lupo">Lupo</option>
-                            </select><br>
-                            <textarea id="desc_produto" name="desc_produto" rows="10" cols="30">Descrição do produto</textarea><br>
-                            <input type="button" name="cadastrar_produto" id="cadastrar_produto" value="Cadastrar produto">
-                        </div>
-                        </div>
-                    </div><br>
-
-                    <div class="comentarios">
-                        
-                        <h3>Comentários:</h3>
-
-                        <div class="clientela">
-                            <p><img src="img/perfil.png" alt="Imagem de perfil do cliente" style="margin-right:10px;">Identificação do cliente<br>
-                            Ótima qualidade! Adorei!!!<br>
-                            <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
-                            <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
-                            <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
-                            <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
-                            <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação"></p>
+                <div class="formulario"  style="background-color:#e6e6e6;">
+                    <form action="">
+                        <div class="formCabeca">
+                            <div class="titulo2">
+                                <h1>Nome do produto</h1>
+                            </div>
                         </div>
 
-                        <div class="clientela">
-                            <p><img src="img/perfil.png" alt="Imagem de perfil do cliente" style="margin-right:10px;">Identificação do cliente<br>
-                            Ótima qualidade! Adorei!!!<br>
-                            <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
-                            <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
-                            <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
-                            <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
-                            <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação"></p>
+                        <div class="boxes">
+                            <div class="box">
+                                <label for="nomeProduto">Nome do produto</label>
+                                <input type="text" name="nomeProduto" id="nomeProduto" placeholder="Nome do produto" required>
+                            </div>
+
+                            <div class="box">
+                                <label for="quantidadeProduto">Quantidade de produtos</label>
+                                <input type="text" name="quantidadeProduto" id="quantidadeProduto" placeholder="Quantidade de produtos" required>
+                            </div>
+
+                            <div class="box">
+                                <label for="tamanhoProduto">Tamanho do produto</label>
+                                <select name="tamanhoProduto" id="tamanhoProduto" default="tamanho" required>
+                                    <option value="tamanho">Tamanho</option>
+                                    <option value="PP">PP</option>
+                                    <option value="P">P</option>
+                                    <option value="M">M</option>
+                                    <option value="G">G</option>
+                                    <option value="GG">GG</option>
+                                    <option value="XG">XG</option>
+                                    <option value="XXG">XXG</option>
+                                </select>
+                            </div>
+
+                            <div class="box descProduto">
+                                <label for="descProduto">Descrição do produto</label>
+                                <input type="text" name="descProduto" id="descProduto" placeholder="Descrição do produto" required>
+                            </div>
                         </div>
 
-                        <div class="clientela">
-                            <p><img src="img/perfil.png" alt="Imagem de perfil do cliente" style="margin-right:10px;">Identificação do cliente<br>
-                            Ótima qualidade! Adorei!!!<br>
-                            <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
-                            <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
-                            <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
-                            <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
-                            <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação"></p>
+                        <div class="butao">
+                            <button><a href="#">Adicionar ao carrinho</a></button>
                         </div>
-
-                        <div class="clientela">
-                            <p><img src="img/perfil.png" alt="Imagem de perfil do cliente" style="margin-right:10px;">Identificação do cliente<br>
-                            Ótima qualidade! Adorei!!!<br>
-                            <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
-                            <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
-                            <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
-                            <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
-                            <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação"></p>
-                        </div>
-                        </div>
-                    </div>
-                    
+                    </form>
                 </div>
             </div>
-            <!-- FIM DISPONIBILIZAÇÃO DE PRODUTOS PRINCIPAIS -->
+            <!-- FIM ÁREA CADASTRO DE PRODUTOS -->
+
+
+            <!-- INÍCIO ÁREA DE COMENTÁRIOS -->
+            <div class="areaComentarios">
+                <div class="comentarios"  style="background-color:#e6e6e6;">
+                    
+                        <div class="formCabeca">
+                            <div class="titulo2">
+                                <h1>Comentários</h1>
+                            </div>
+                        </div>
+
+                        <div class="boxes">
+                            <div class="box">
+                                <label for="nomeProduto"><img src="img/perfil.png" alt="Foto de perfil" title="Foto de perfil"><span>Mario</span></label>
+                                <p>Produto de ótima qualidade!<br>
+                                    <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
+                                    <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
+                                    <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
+                                    <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
+                                    <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação"></p>
+                            </div>
+
+                            <div class="box">
+                                <label for="quantidadeProduto"><img src="img/perfil.png" alt="Foto de perfil" title="Foto de perfil"><span>Dani</span></label>
+                                <p>Entrega super rápido!<br>
+                                    <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
+                                    <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
+                                    <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
+                                    <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
+                                    <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação"></p>
+                            </div>
+
+                            <div class="box">
+                                <label for="tamanhoProduto"><img src="img/perfil.png" alt="Foto de perfil" title="Foto de perfil"><span>Junior</span></label>
+                                <p>Amei!<br>
+                                    <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
+                                    <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
+                                    <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
+                                    <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
+                                    <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação"></p>
+                            </div>
+
+                            <div class="box descProduto">
+                                <label for="descProduto"><img src="img/perfil.png" alt="Foto de perfil" title="Foto de perfil"><span>Paulo</span></label>
+                                <p>Muito bom!<br>
+                                    <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
+                                    <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
+                                    <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
+                                    <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação">
+                                    <img src="img/estrelinha.png" width="25px" alt="Estrelas de avaliação"></p>
+                            </div>
+                        </div>
+                    <form action="">
+                        <h3>Adicione um comentário</h3>
+                        <div class="boxesComentarios">
+                            <div class="box">
+                                <label for="nomeCliente">Seu nome</label>
+                                <input type="text" name="nomeCliente" id="nomeCliente" placeholder="Insira seu nome" required>
+                            </div>
+
+                            <div class="box">
+                                <textarea name="comentario" id="comentario" cols="30" rows="5" placeholder="Insira seu cometário"></textarea>
+                                <div class="butao">
+                                    <button><a href="#">Adicionar comentário</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- FIM ÁREA DE COMENTÁRIOS -->
 
         </div>
         <!-- FIM CORPO -->

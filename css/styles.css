@@ -14,6 +14,7 @@ body{
 /* ESTILO CORPO */
 #corpo{
     width: 100%;
+    height: 100%;
     z-index: 1;
     display: flex;
     flex-wrap: wrap;
@@ -311,7 +312,6 @@ input:checked + .slider:before {
     display: flex;
 }
 
-/* ESTILO TRANSIÇÃO AUMENTO */
 .expande{
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -344,84 +344,279 @@ input:checked + .slider:before {
     box-shadow: 0 8px 16px 0 rgba(58, 56, 121, 0.8);
 }
 
-.add_produto{
-    padding: 10px 20px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
-
-.desc{
-    margin-left: 5px;
-    padding: 2px;
-}
-
-.produto_insere{
-    background-color: rgb(255, 255, 255);
-    padding: 10px 20px;
-    margin: 0 auto;
-    border: 2px solid rgb(48, 48, 48);
-    max-width: 1000px;
+/* ESTILO INSERÇÃO DE PRODUTOS */
+.corpo{
     width: 100%;
+    height: 100vh;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    color: rgb(0, 0, 0);
-    box-shadow: 0 8px 16px 0 rgba(58, 56, 121, 0.8);
+    background-color: rgb(198, 197, 227);
 }
 
-.info{
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.info2 input,select,textarea{
-    margin-left: 35px;
-    margin-bottom: 10px;
-    padding: 5px;
-}
-
-/* ESTILO COMENTÁRIOS */
-.comentarios{
-    background-color: rgb(255, 255, 255);
-    padding: 10px 20px;
-    margin: 30px auto;
-    border: 2px solid rgb(48, 48, 48);
+.area{
+    width: 100%;
     max-width: 1000px;
-    width: 100%;
-    color: rgb(0, 0, 0);
-    box-shadow: 0 8px 16px 0 rgba(58, 56, 121, 0.8);
+    height: 100%;
+    max-height: 600px;
+    margin: 60px auto;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(58, 56, 121, 0.5);
 }
 
-.clientela{
-    border: 1px solid rgb(48, 48, 48);
-    max-width: 300px;
-    width: 100%;
-    margin: 20px;
-}
-
-.clientela p{
-    padding: 5px;
-    margin: 5px;
-}
-
-.intro{
-    max-width: 1400px;
-    width: 100%;
-    margin: 10px auto;
+.addDoc{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eecb86ec;
     padding: 10px;
+}
+
+.addDoc img{
+    width: 31rem;
+}
+
+.formulario{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: rgb(255, 255, 255);
+    padding: 15px;
+}
+
+.titulo2{
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo2 h1::after{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: rgb(132, 130, 216);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.box img{
+    margin-top: 5px;
+}
+
+.box span{
+    margin-left: 10px;
+}
+
+.box input, .box textarea{
+    margin: 10px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.box select{
+    margin: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    justify-content: center;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.box input:focus-visible, .box select:focus-visible{
+    outline: 1px solid rgb(132, 130, 216);
+}
+
+.box label{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.box input::placeholder{
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+.butao button{
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    background-color: rgb(132, 130, 216);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.butao button:hover{
+    background-color: rgb(79, 77, 140);
+}
+
+.butao button a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 1330px){
+    .addDoc{
+        display: none;
+    }    
+
+    .area{
+        width: 50%;
+    }
+
+    .areaComent{
+        width: 80%;
+    }
+
+    .addDocComent{
+        display: flex;
+    }    
+
+    .areaComentarios{
+        width: 80%;
+    }
+
+    .formulario{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1064px){
+    .area{
+        width: 90%;
+        height: 100%;
+    }
+
+    .areaComentarios{
+        width: 90%;
+        height: 100%;
+    }
+
+    .boxes{
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 350px;
+        padding-right: 15px;
+    }
+}
+
+/* ESTILO DE COMENTÁRIOS */
+.areaComent{
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    max-height: 600px;
+    margin: 60px auto;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(58, 56, 121, 0.5);
+}
+
+.areaComentarios{
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    max-height: 900px;
+    margin: 20px auto;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(58, 56, 121, 0.5);
+}
+
+
+.addDocComent{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eecb86ec;
+    padding: 10px;
+}
+
+.addDocComent img{
+    width: 31rem;
+}
+
+.comentarios{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+}
+
+.boxesComentarios{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 15px 0;
+}
+
+.box p{
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.descProduto{
+    width: 100%;
+    max-width: 300px;
+}
+
+.descProduto label{
+    margin-left: 5px
+}
+
+.descProduto input{
+    margin: 10px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* ESTILO PÁGINA SOBRE */
+.intro{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 1500px;
+    margin: 40px auto;
+    padding: 10px;
 }
 
 .principal{
-    max-width: 1400px;
-    width: 100%;
-    margin: 10px auto;
-    padding: 10px;
     background-color: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 1500px;
+    margin: 20px auto;
+    padding: 10px;
 }
-
 /* ESTILO RODAPÉ */
 #footer{
     text-align: center;

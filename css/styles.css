@@ -117,7 +117,7 @@ body{
 
 /* ESTILO BARRA DE PESQUISA */
 #barraPesquisa{
-    margin-left: 25px;
+    margin: 5px 25px;
     padding: 5px;
     background-color: rgb(255, 255, 255);
     height: 45px;

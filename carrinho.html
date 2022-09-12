@@ -9,9 +9,40 @@ de cadastro, com um .blank que fica sobreposta nas outras páginas) -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>carrinho</title>
+    <title>Carrinho</title>
+
+    <!-- IMPORTAÇÃO DE FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+
+    <!-- IMPORTAÇÃO DE CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
+
+    <!-- BOTÃO DE ACESSIBILIDADE -->
+    <div id="acessa">
+        <button id="btnAcessa" aria-label="Abrir menu de acessibilidade" aria-haspopup="true" aria-controls="acessibilidade" aria-expanded="false"><img src="img/acessibilidade.png" alt="Imagem de símbolo de acessibilidade" title="Menu de itens para acessibilidade"></button>
+
+            <ul class="acessibilidade" role="acessibilidade">
+                <li class="acessa">
+                    <li>
+                        <label class="switch" title="Adaptação para daltonismo">
+                            <input type="checkbox" name="daltonico" id="daltonico">
+                                <span class="slider round"></span>
+                        </label><span class="daltonico">Adaptação para daltônicos</span>
+                    </li>
+                    <li>
+                        <label class="switch" title="Adaptação para letras maiores">
+                        <input type="checkbox" name="tamanho_fonte" id="tamanho_fonte">
+                            <span class="slider round"></span>
+                    </label><span class="tamanho_fonte">Aumento de fonte</span>
+                    </li>
+                </li>
+            </ul>
+    </div>
+    <!-- FIM BOTÃO ACESSIBILIDADE -->
     
     <!-- IMPORTAÇÃO DE SCRIPTS -->
     <script src="js/script.js"></script>

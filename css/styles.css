@@ -22,7 +22,7 @@ body{
 /* ESTILO LOGO */
 .logo{
     width:100px;
-    margin: 5px 5px 0 25px;
+    margin: 5px 5px 0 5px;
     padding: 5px;
 }
 
@@ -77,7 +77,6 @@ body{
 
 #btnCelular{
     display: none;
-    margin-left: 10px;
 }
 
 @media (max-width:2000px){
@@ -103,10 +102,8 @@ body{
 
     #btnCelular{
         display: flex;
-        padding: 5px;
         cursor: pointer;
         background-color: rgb(79, 77, 140);
-        margin-left: 5px;
         border: none;
         font-size: 20px;
     }
@@ -115,8 +112,54 @@ body{
         margin-left: 10px;
         color: rgb(255, 255, 255);
     }
-
 }
+
+/* ESTILO BARRA DE PESQUISA */
+#barraPesquisa{
+    margin-left: 25px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    height: 45px;
+    border-radius: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#busca{
+    border: none;
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    padding: 0;
+    font-size: 17px;
+    width: 0;
+    transition: 0.4s;
+}
+
+.lupa{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#barraPesquisa:hover > #busca{
+    max-width: 300px;
+    width: 100%;
+    padding-left: 10px;
+}
+
+@media (max-width:600px){
+    #busca{
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
 /* ESTILO BANNER */
 .banner{
     width: 100%;

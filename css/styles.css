@@ -186,7 +186,6 @@ body{
     background-color: rgb(132, 130, 216);
     width: 100%;
     max-width: 300px;
-    transition: .5s;
     top: 65px;
     right: 30px;
     visibility: hidden;

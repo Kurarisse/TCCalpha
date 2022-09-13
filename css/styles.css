@@ -405,8 +405,12 @@ input:checked + .slider:before {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-color:#e6e6e6;
     padding: 10px;
+}
+
+.addDoc2 img{
+    background-color: rgb(255, 255, 255);
 }
 
 .addDoc img{
@@ -450,7 +454,7 @@ input:checked + .slider:before {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
+    background-color:#e6e6e6;
     padding: 15px;
 }
 
@@ -606,7 +610,7 @@ input:checked + .slider:before {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
+    background-color:#e6e6e6;
     padding: 15px;
 }
 
@@ -615,6 +619,7 @@ input:checked + .slider:before {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
+    background-color:#e6e6e6;
     padding: 5px;
 }
 

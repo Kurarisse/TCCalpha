@@ -477,7 +477,7 @@ input:checked + .slider:before {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .box input, .box textarea, .img{
@@ -512,24 +512,6 @@ input:checked + .slider:before {
     font-size: 14px;
 }
 
-.gender-inputs{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-.gender-group{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.gender-input{
-    margin-top: 5px;
-    display: flex;
-    align-items: center;
-    margin-left: 10px;
-}
-
 .descProduto{
     width: 100%;
     max-width: 300px;
@@ -560,7 +542,6 @@ input:checked + .slider:before {
 
 .butao button{
     width: 100%;
-    margin-top: 15px;
     border: none;
     background-color: rgb(132, 130, 216);
     padding: 10px;
@@ -609,14 +590,6 @@ input:checked + .slider:before {
         flex-wrap: nowrap;
         max-height: 200px;
         padding-right: 15px;
-    }
-
-    .gender-inputs{
-        margin-top: 5px;
-    }
-
-    .gender-group{
-        flex-direction: column;
     }
 }
 /* FIM ESTILO INSERÇÃO DE PRODUTOS, CADASTRO DE CLIENTES, PRODUTO AUMENTADO E COMENTÁRIOS */

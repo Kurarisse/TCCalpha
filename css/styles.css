@@ -183,11 +183,11 @@ body{
 
 .acessibilidade{
     display: block;
-    position: absolute;
+    position: fixed;
     background-color: rgb(132, 130, 216);
     width: 100%;
     max-width: 300px;
-    top: 65px;
+    top: 60px;
     right: 30px;
     visibility: hidden;
     overflow-y: hidden;
@@ -197,6 +197,7 @@ body{
  #acessa.active .acessibilidade{
     height: 120px;
     visibility: visible;
+    overflow: auto;
     background-color: rgb(132, 130, 216);
     box-shadow: 4px 4px rgba(58, 56, 121, 0.6);
     z-index: 100;

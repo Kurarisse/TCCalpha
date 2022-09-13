@@ -168,6 +168,11 @@ body{
     #busca{
         width: 100%;
         max-width: 300px;
+        transition: none;
+    }
+
+    #barraPesquisa{
+        width: 300px;
     }
 }
 /* FIM ESTILO BARRA DE PESQUISA */
@@ -632,6 +637,71 @@ input:checked + .slider:before {
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
 }
 /* FIM ESTILO COMENTÁRIOS */
+
+
+/* INÍCIO ESTILO PERFIL */
+.area2{
+    width: 90%;
+    max-width: 1000px;
+    height: 100%;
+    max-height: 600px;
+    margin: 50px auto;
+    border-radius: 15px;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(58, 56, 121, 0.5);
+}
+
+.comentPerfil{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+}
+
+.perfil{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.infoPerfil{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:justify;
+    align-items: justify;
+}
+
+.infoPerfil p span{
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.infoPerfil p{
+    padding: 5px;
+}
+
+.infoPerfil button{
+    border: none;
+    background-color: rgb(132, 130, 216);
+    color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 8px rgb(58, 56, 121);
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+/* FIM ESTILO PERFIL */
 
 
 /* INÍCIO ESTILO PÁGINA SOBRE */

@@ -75,26 +75,23 @@
         </div>
         <!-- FIM BOTÃO ACESSIBILIDADE -->
 
-        <!-- INÍCIO ÁREA CADASTRO DE PRODUTOS -->
-            <div class="areaComent">
-                <div class="addDocComent" style="background-color:#fff;">
-                    <img src="img/product.png" alt="Imagem do produto" title="Imagem do produto">
+            <!-- INÍCIO ÁREA CADASTRO DE PRODUTOS -->
+            <div class="area">
+                <div class="addDoc2">
+                    <img class="img" src="img/product.png" alt="Imagem do produto" title="Imagem do produto" width="500px">
                 </div>
-
-                <div class="formulario"  style="background-color:#e6e6e6;">
+                <div class="formulario" style="background-color:#e6e6e6;">
                     <form action="">
                         <div class="formCabeca">
                             <div class="titulo2">
                                 <h1>Nome do produto</h1>
                             </div>
+                            <div class="miniDesc">
+                                <p>Pequena descrição de duas linhas do produto.</p>
+                            </div>
                         </div>
 
                         <div class="boxes">
-                            <div class="box">
-                                <label for="nomeProduto">Nome do produto</label>
-                                <input type="text" name="nomeProduto" id="nomeProduto" placeholder="Nome do produto" required>
-                            </div>
-
                             <div class="box">
                                 <label for="quantidadeProduto">Quantidade de produtos</label>
                                 <input type="text" name="quantidadeProduto" id="quantidadeProduto" placeholder="Quantidade de produtos" required>
@@ -113,32 +110,23 @@
                                     <option value="XXG">XXG</option>
                                 </select>
                             </div>
-
-                            <div class="box descProduto">
-                                <label for="descProduto">Descrição do produto</label>
-                                <input type="text" name="descProduto" id="descProduto" placeholder="Descrição do produto" required>
+                        </div>
+                            <div class="butao">
+                                <button><a href="#">Adicionar ao carrinho</a></button>
                             </div>
-                        </div>
-
-                        <div class="butao">
-                            <button><a href="#">Adicionar ao carrinho</a></button>
-                        </div>
                     </form>
                 </div>
             </div>
             <!-- FIM ÁREA CADASTRO DE PRODUTOS -->
 
-
             <!-- INÍCIO ÁREA DE COMENTÁRIOS -->
-            <div class="areaComentarios">
-                <div class="comentarios"  style="background-color:#e6e6e6;">
-                    
+            <div class="area">
+                <div class="comentarios" style="background-color:#e6e6e6;">
                         <div class="formCabeca">
                             <div class="titulo2">
                                 <h1>Comentários</h1>
                             </div>
                         </div>
-
                         <div class="boxes">
                             <div class="box">
                                 <label for="nomeProduto"><img src="img/perfil.png" alt="Foto de perfil" title="Foto de perfil"><span>Mario</span></label>
@@ -189,7 +177,7 @@
                             </div>
 
                             <div class="box">
-                                <textarea name="comentario" id="comentario" cols="30" rows="5" placeholder="Insira seu cometário"></textarea>
+                                <textarea name="comentario" id="comentario" cols="30" rows="3" placeholder="Insira seu cometário"></textarea>
                                 <div class="butao">
                                     <button><a href="#">Adicionar comentário</a></button>
                                 </div>

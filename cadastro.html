@@ -18,7 +18,7 @@
 </head>
 <body>
     <!-- INÍCIO CORPO -->
-    <div id="corpo">
+    <div id="corpo" class="corpo">
 
         <!-- INÍCIO CABEÇALHO -->
         <header class="cabecalho">
@@ -75,10 +75,10 @@
         </div>
         <!-- FIM BOTÃO ACESSIBILIDADE -->
 
-        <!-- INÍCIO ÁREA CADASTRO DE PRODUTOS -->
-        <div class="container">
+         <!-- INÍCIO ÁREA CADASTRO DE PRODUTOS -->
+         <div class="area">
             <div class="addDoc">
-                <img src="img/addProfile.svg" alt="Imagem de pessoa inserindo documentos" title="Imagem de pessoa inserindo documentos">
+                <img src="img/addProfile.svg" alt="Imagem de pessoa inserindo dados" title="Imagem de pessoa inserindo dados">
             </div>
 
             <div class="formulario">
@@ -87,49 +87,80 @@
                         <div class="titulo2">
                             <h1>Cadastre-se</h1>
                         </div>
+                        <div class="login-button">
+                            <button><a href="#">Entrar</a></button>
+                        </div>
                     </div>
 
                     <div class="boxes">
                         <div class="box">
-                            <label for="nomeProduto">Nome do produto</label>
-                            <input type="text" name="nomeProduto" id="nomeProduto" placeholder="Nome do produto" required>
+                            <label for="firstname">Primeiro nome</label>
+                            <input type="text" name="firstname" id="firstname" placeholder="Insira seu nome" required>
                         </div>
 
                         <div class="box">
-                            <label for="quantidadeProduto">Quantidade de produtos</label>
-                            <input type="text" name="quantidadeProduto" id="quantidadeProduto" placeholder="Quantidade de produtos" required>
+                            <label for="lastname">Sobrenome</label>
+                            <input type="text" name="lastname" id="lastname" placeholder="Insira seu sobrenome" required>
                         </div>
 
                         <div class="box">
-                            <label for="tamanhoProduto">Tamanho do produto</label>
-                            <select name="tamanhoProduto" id="tamanhoProduto" default="tamanho" required>
-                                <option value="tamanho">Tamanho</option>
-                                <option value="PP">PP</option>
-                                <option value="P">P</option>
-                                <option value="M">M</option>
-                                <option value="G">G</option>
-                                <option value="GG">GG</option>
-                                <option value="XG">XG</option>
-                                <option value="XXG">XXG</option>
-                            </select>
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="nome@email.com" required>
                         </div>
 
-                        <div class="box  descProduto">
-                            <label for="descProduto">Descrição do produto</label>
-                            <input type="text" name="descProduto" id="descProduto" placeholder="Descrição do produto" required>
+                        <div class="box">
+                            <label for="celular">Celular</label>
+                            <input type="tel" name="celular" id="celular" placeholder="(XX) XXXXX-XXXX" required>
+                        </div>
+
+                        <div class="box">
+                            <label for="password">Senha</label>
+                            <input type="password" name="password" id="password" placeholder="********" required>
+                        </div>
+
+                        <div class="box">
+                            <label for="confirmpassword">Confirme sua senha</label>
+                            <input type="password" name="confirmpassword" id="confirmpassword" placeholder="********" required>
                         </div>
                     </div>
 
+                    <div class="gender-inputs">
+                        <div>
+                            <h6>Gênero</h6>
+                        </div>
+
+                        <div class="gender-group">
+                            <div class="gender-input">
+                                <input type="radio" id="female" name="gender">
+                                <label for="female">Feminino</label>
+                            </div>
+
+                            <div class="gender-input">
+                                <input type="radio" id="male" name="gender">
+                                <label for="male">Masculino</label>
+                            </div>
+
+                            <div class="gender-input">
+                                <input type="radio" id="others" name="gender">
+                                <label for="others">Outros</label>
+                            </div>
+
+                            <div class="gender-input">
+                                <input type="radio" id="none" name="gender">
+                                <label for="none">Prefiro não dizer</label>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div class="butao">
-                        <button><a href="#">Cadastrar</a></button>
+                        <button><a href="#">Continuar</a></button>
                     </div>
+
                 </form>
             </div>
         </div>
         <!-- FIM ÁREA CADASTRO DE PRODUTOS -->
 
-    </div>
-    <!-- FIM CORPO -->
         <!-- RODAPÉ -->
         <div id="footer">
             <p>
@@ -142,6 +173,9 @@
             <p id="reserva">&copy;Todos os direitos reservados</p>
         </div>
         <!-- FIM RODAPÉ -->
+
+    </div>
+    <!-- FIM CORPO -->
 
         <!-- IMPORTAÇÃO DE SCRIPTS -->
         <script src="js/script.js"></script>

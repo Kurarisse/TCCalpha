@@ -1,17 +1,21 @@
-/* ESTILOS PADRÃO */
+/* INÍCIO ESTILOS PADRÃO */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Kanit', sans-serif, 'Arial';
 }
+/* FIM ESTILOS PADRÃO */
 
-/* ESTILOS GERAIS CORPO */
+
+/* INÍCIO ESTILOS GERAIS CORPO */
 body{
     background-color: rgb(198, 197, 227);
 }
+/* FIM ESTILOS GERAIS CORPO */
 
-/* ESTILO CORPO */
+
+/* INÍCIO ESTILO CORPO */
 #corpo{
     width: 100%;
     height: 100%;
@@ -19,15 +23,19 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
+/* FIM ESTILO CORPO */
 
-/* ESTILO LOGO */
+
+/* INÍCIO ESTILO LOGO */
 .logo{
     width:100px;
     margin: 5px 5px 0 5px;
     padding: 5px;
 }
+/* FIM ESTILO LOGO */
 
-/* ESTILO CABEÇALHO */
+
+/* INÍCIO ESTILO CABEÇALHO */
 .cabecalho{
     display: flex;
     flex-wrap: wrap;
@@ -68,8 +76,10 @@ body{
     padding: 10px;
     color: rgb(255, 255, 255);
 }
+/* FIM ESTILO CABEÇALHO */
 
-/* ESTILO MENU HAMBÚRGUER */
+
+/* INÍCIO ESTILO MENU HAMBÚRGUER */
 .menu_hamburguer{
     display: flex;
     flex-wrap: wrap;
@@ -114,8 +124,10 @@ body{
         color: rgb(255, 255, 255);
     }
 }
+/* FIM ESTILO MENU HAMBÚRGUER */
 
-/* ESTILO BARRA DE PESQUISA */
+
+/* INÍCIO ESTILO BARRA DE PESQUISA */
 #barraPesquisa{
     margin: 5px 25px;
     padding: 5px;
@@ -158,8 +170,10 @@ body{
         max-width: 300px;
     }
 }
+/* FIM ESTILO BARRA DE PESQUISA */
 
-/* ESTILO BOTÃO DE ACESSIBILIDADE */
+
+/* INÍCIO ESTILO BOTÃO DE ACESSIBILIDADE */
 .acessa{
     display: flex;
     flex-wrap: wrap;
@@ -187,8 +201,8 @@ body{
     background-color: rgb(132, 130, 216);
     width: 100%;
     max-width: 300px;
-    top: 60px;
-    right: 30px;
+    top: 55px;
+    right: 25px;
     visibility: hidden;
     overflow-y: hidden;
     border-radius: 25px;
@@ -224,7 +238,6 @@ body{
     padding: 5px;
     margin-left: 2px;
 }
-
 /* ESTILOS DAS UTILIDADES DE ACESSIBILIDADE */
 .switch {
     position: relative;
@@ -282,28 +295,35 @@ input:checked + .slider:before {
         right: 30px;
     }
 }
+/* FIM ESTILO BOTÃO DE ACESSIBILIDADE */
 
 
-/* ESTILO BANNER */
+/* INÍCIO ESTILO BANNER */
 .banner{
     width: 100%;
     z-index: -1;
     display: flex;
     flex-wrap: wrap;
 }
+/* FIM ESTILO BANNER */
+
 
 /* ESTILO TÍTULO */
 .titulo{
     margin: 20px auto;
     text-align: center;
 }
+/* FIM ESTILO TÍTULO */
 
-/* ESTILO PRODUTOS */
+
+/* INÍCIO ESTILO PRODUTOS */
 #produto{
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
     margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     flex-wrap: wrap;
     display: flex;
@@ -322,16 +342,19 @@ input:checked + .slider:before {
 .centro{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 }
 
 .produto{
     background-color: rgb(255, 255, 255);
     padding: 10px 25px;
-    margin: 0 12px 12px 100px;
+    margin: 0 20px 70px 20px;
     border: 2px solid rgb(48, 48, 48);
     box-shadow: 0 4px 8px 0 rgba(58, 56, 121, 0.5);
     transition: 0.3s;
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -340,8 +363,10 @@ input:checked + .slider:before {
 .produto:hover{
     box-shadow: 0 8px 16px 0 rgba(58, 56, 121, 0.8);
 }
+/* FIM ESTILO PRODUTOS */
 
-/* ESTILO INSERÇÃO DE PRODUTOS */
+
+/* INÍCIO ESTILO INSERÇÃO DE PRODUTOS, CADASTRO DE CLIENTES, PRODUTO AUMENTADO E COMENTÁRIOS */
 .corpo{
     width: 100%;
     height: 100vh;
@@ -370,8 +395,48 @@ input:checked + .slider:before {
     padding: 10px;
 }
 
+.addDoc2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
 .addDoc img{
     width: 31rem;
+}
+
+.login-button{
+    display: flex;
+    align-items: center;
+}
+
+.login-button button{
+    border: none;
+    background-color: rgb(132, 130, 216);
+    padding: 8px 10px;
+    margin-left: 45px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button button:hover{
+    background-color: rgb(103, 101, 173);
+}
+
+.login-button button a{
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+.formCabeca{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .formulario{
@@ -412,18 +477,10 @@ input:checked + .slider:before {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
-.box img{
-    margin-top: 5px;
-}
-
-.box span{
-    margin-left: 10px;
-}
-
-.box input, .box textarea{
+.box input, .box textarea, .img{
     margin: 10px;
     padding: 15px 20px;
     border: none;
@@ -444,7 +501,7 @@ input:checked + .slider:before {
     outline: 1px solid rgb(132, 130, 216);
 }
 
-.box label{
+.box label, .gender-input label, .gender-inputs h6{
     font-size: 16px;
     font-weight: 500;
     color: rgb(0, 0, 0);
@@ -455,143 +512,22 @@ input:checked + .slider:before {
     font-size: 14px;
 }
 
-.butao button{
-    width: 100%;
-    margin-top: 20px;
-    border: none;
-    background-color: rgb(132, 130, 216);
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.butao button:hover{
-    background-color: rgb(79, 77, 140);
-}
-
-.butao button a{
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: 600;
-    color: rgb(255, 255, 255);
-}
-
-@media screen and (max-width: 1330px){
-    .addDoc{
-        display: none;
-    }    
-
-    .area{
-        width: 50%;
-    }
-
-    .areaComent{
-        width: 80%;
-    }
-
-    .addDocComent{
-        display: flex;
-    }    
-
-    .areaComentarios{
-        width: 80%;
-    }
-
-    .formulario{
-        width: 100%;
-    }
-}
-
-@media screen and (max-width:1064px){
-    .area{
-        width: 90%;
-        height: 100%;
-    }
-
-    .areaComentarios{
-        width: 90%;
-        height: 100%;
-    }
-
-    .boxes{
-        flex-direction: column;
-        overflow-y: scroll;
-        flex-wrap: nowrap;
-        max-height: 350px;
-        padding-right: 15px;
-    }
-}
-
-/* ESTILO DE COMENTÁRIOS */
-.areaComent{
-    width: 100%;
-    max-width: 1000px;
-    height: 100%;
-    max-height: 600px;
-    margin: 60px auto;
-    display: flex;
-    box-shadow: 5px 5px 10px rgba(58, 56, 121, 0.5);
-}
-
-.areaComentarios{
-    width: 100%;
-    max-width: 1000px;
-    height: 100%;
-    max-height: 900px;
-    margin-top: 0;
-    margin-bottom: 30px;
-    display: flex;
-    box-shadow: 5px 5px 10px rgba(58, 56, 121, 0.5);
-}
-
-
-.addDocComent{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #eecb86ec;
-    padding: 10px;
-}
-
-.addDocComent img{
-    width: 31rem;
-}
-
-.comentarios{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: rgb(255, 255, 255);
-    padding: 15px;
-}
-
-.boxesComentarios{
+.gender-inputs{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     flex-direction: column;
-    padding: 15px 0;
 }
 
-.boxes label{
+.gender-group{
     display: flex;
     flex-wrap: wrap;
+}
+
+.gender-input{
+    margin-top: 5px;
+    display: flex;
     align-items: center;
-    justify-items: center;
-}
-
-.branco{
-    background-color: rgb(255, 255, 255);
-}
-
-.box p{
-    margin: 10px;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+    margin-left: 10px;
 }
 
 .descProduto{
@@ -611,7 +547,121 @@ input:checked + .slider:before {
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
 }
 
-/* ESTILO PÁGINA SOBRE */
+.miniDesc{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.miniDesc p{
+    color: rgb(81, 81, 81);
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.butao button{
+    width: 100%;
+    margin-top: 15px;
+    border: none;
+    background-color: rgb(132, 130, 216);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.butao button:hover{
+    background-color: rgb(103, 101, 173);
+}
+
+.butao button a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 1330px){
+    .addDoc{
+        display: none;
+    }    
+
+    .addDoc2{
+        display: none;
+    }
+
+    .area{
+        width: 50%;
+    }
+
+    .formulario{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1064px){
+    .area{
+        width: 90%;
+        height: 100%;
+    }
+
+    .boxes{
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 200px;
+        padding-right: 15px;
+    }
+
+    .gender-inputs{
+        margin-top: 5px;
+    }
+
+    .gender-group{
+        flex-direction: column;
+    }
+}
+/* FIM ESTILO INSERÇÃO DE PRODUTOS, CADASTRO DE CLIENTES, PRODUTO AUMENTADO E COMENTÁRIOS */
+
+
+/* ESTILO DE COMENTÁRIOS */
+.comentarios{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+}
+
+.boxesComentarios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.boxes label{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+}
+
+.branco{
+    background-color: rgb(255, 255, 255);
+}
+
+.box p{
+    margin: 0 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+/* FIM ESTILO COMENTÁRIOS */
+
+
+/* INÍCIO ESTILO PÁGINA SOBRE */
 .intro{
     background-color: rgb(255, 255, 255);
     width: 100%;
@@ -627,7 +677,10 @@ input:checked + .slider:before {
     margin: 20px auto;
     padding: 10px;
 }
-/* ESTILO RODAPÉ */
+/* FIM ESTILO PÁGINA SOBRE */
+
+
+/* INÍCIO ESTILO RODAPÉ */
 #footer{
     text-align: center;
     background-color: rgb(79, 77, 140);
@@ -654,8 +707,10 @@ input:checked + .slider:before {
     font-size: 17px;
     padding: 5px;
 }
+/* FIM ESTILO RODAPÉ */
 
-/* ESTILOS GERAIS */
+
+/* INÍCIO ESTILOS GERAIS */
 p{
     font-size: 17px;
 }
@@ -668,3 +723,4 @@ a{
 ::placeholder{
     color: rgb(0, 0, 0);
 }
+/* FIM ESTILOS GERAIS */

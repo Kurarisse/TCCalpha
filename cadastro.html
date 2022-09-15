@@ -18,62 +18,57 @@
 </head>
 <body>
     <!-- INÍCIO CORPO -->
-    <div id="corpo" class="corpo">
+    <div id="corpo">
+
+        <!-- INÍCIO BOTÕES DE ACESSIBILIDADE -->
+        <div class="contraste">
+            <button id="botaoContraste">Contraste <img src="img/contraste.png" alt="Símbolo de contraste" title="Símbolo de contraste" width="20px"></button>&nbsp;
+            <button id="aumentoFonte">Aumento de fonte</button>
+        </div>
+        <!-- FIM BOTÕES DE ACESSIBILIDADE -->
 
         <!-- INÍCIO CABEÇALHO -->
         <header class="cabecalho">
 
+            <!-- INÍCIO ÁREA DA ESQUERDA -->
+            <!-- INÍCIO MENU -->
+            <div class="junto">
+                <nav id="nav">
+                    <button id="btnCelular" aria-label="Abrir menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false"><img src="img/menu.png" alt="Imagem menu hambúrguer" title="Menu de links das páginas"><span>Menu</span></button>
+    
+                        <ul class="menu" role="menu">
+                            <li class="hover"><a href="index.html" title="Link para a página de início">Home</a></li>
+                            <li class="hover"><a href="lingeries.html" title="Link para a página de produtos de lingerie">Lingeries</a></li>
+                            <li class="hover"><a href="sexShop.html" title="Link para a página de produtos de sex shop">Sex shop</a></li>
+                            <li class="hover"><a href="cosmeticos.html" title="Link para a página de produtos de cosméticos">Cosméticos</a></li>
+                            <li class="hover"><a href="sobre.html" title="Link para a página com informações sobre a empresa">Sobre nós</a></li>
+                            <li class="hover"><a href="insereProduto.html" title="Link para a página de cadastro de produtos">Cadastro de produtos</a></li>
+                            <li class="menu_hamburguer">                      
+                            <!-- ADICIONAR FUNÇÃO ONCLICK -->
+                            <li class="hover"><a href=""><img src="img/sair.png" alt="Imagem de símbolo para sair da página" title="Símbolo para sair da página"><span>Sair</span></a></li>
+                            </li> 
+                        </ul>
+                </nav>
+                <!-- FIM MENU -->
+    
+            </div>
+            <!-- FIM ÁREA DA ESQUERDA -->
+
+        <!-- INÍCIO LINKS ALINHADOS À DIREITA -->
+        <div class="direita">
+            <div class="alinha">
+                <a href="cadastro.html" title="Link para a página de cadastro" class="margem">Cadastro/Login</a>
+                <a href="perfil.html" title="Link para acesso à página de perfil"><img src="img/perfil.png" alt="Imagem de um boneco de perfil" title="Boneco de perfil"><span>Perfil</span></a>
+                <a href="carrinho.html"><img src="img/carrinho.png" alt="Imagem de um carrinho de compras" title="Carrinho de compras"><span>Carrinho</span></a>
+            </div>
             <!-- LOGO -->
             <a href="index.html"><img  class="logo" src="img/logo_logo.png" alt="Imagem de logo" title="Imagem de logo"></a>
             <!-- FIM LOGO -->
-
-            <!-- INÍCIO MENU -->
-            <nav id="nav">
-                <button id="btnCelular" aria-label="Abrir menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false"><img src="img/menu.png" alt="Imagem menu hambúrguer" title="Menu de links das páginas"><span>Menu</span></button>
-
-                    <ul class="menu" role="menu">
-                        <li class="hover"><a href="index.html" title="Link para a página de início">Home</a></li>
-                        <li class="hover"><a href="lingeries.html" title="Link para a página de produtos de lingerie">Lingeries</a></li>
-                        <li class="hover"><a href="sexShop.html" title="Link para a página de produtos de sex shop">Sex shop</a></li>
-                        <li class="hover"><a href="cosmeticos.html" title="Link para a página de produtos de cosméticos">Cosméticos</a></li>
-                        <li class="hover"><a href="sobre.html" title="Link para a página com informações sobre a empresa">Sobre nós</a></li>                    
-                        <li class="hover"><a href="cadastro.html" title="Link para a página de cadastro">Cadastro/Login</a></li>
-                        <li class="hover"><a href="insereProduto.html" title="Link para a página de cadastro de produtos">Cadastro de produtos</a></li>
-                        <li class="menu_hamburguer">
-                        <li class="hover"><a href="carrinho.html"><img src="img/carrinho.png" alt="Imagem de um carrinho de compras" title="Carrinho de compras"><span>Carrinho</span></a></li>
-                        <li class="hover"><a href="perfil.html"><img src="img/perfil.png" alt="Imagem de um boneco de perfil" title="Boneco de perfil"><span>Perfil</span></a></li>                          
-                        <!-- ADICIONAR FUNÇÃO ONCLICK -->
-                        <li class="hover"><a href=""><img src="img/sair.png" alt="Imagem de símbolo para sair da página" title="Símbolo para sair da página"><span>Sair</span></a></li>
-                        </li> 
-                    </ul>
-            </nav>
-            <!-- FIM MENU -->
+        </div>
+        <!-- FIM LINKS ALINHADOS À DIREITA -->
 
         </header>
         <!-- FIM CABEÇALHO -->
-
-        <!-- BOTÃO DE ACESSIBILIDADE -->
-        <div id="acessa">
-            <button id="btnAcessa" aria-label="Abrir menu de acessibilidade" aria-haspopup="true" aria-controls="acessibilidade" aria-expanded="false"><img src="img/acessibilidade.png" alt="Imagem de símbolo de acessibilidade" title="Menu de itens para acessibilidade"></button>
-
-                <ul class="acessibilidade" role="acessibilidade">
-                    <li class="acessa">
-                        <li>
-                            <label class="switch" title="Adaptação para daltonismo">
-                                <input type="checkbox" name="daltonico" id="daltonico">
-                                    <span class="slider round"></span>
-                            </label><span class="daltonico">Adaptação para daltônicos</span>
-                        </li>
-                        <li>
-                            <label class="switch" title="Adaptação para letras maiores">
-                            <input type="checkbox" name="tamanho_fonte" id="tamanho_fonte">
-                                <span class="slider round"></span>
-                        </label><span class="tamanho_fonte">Aumento de fonte</span>
-                        </li>
-                    </li>
-                </ul>
-        </div>
-        <!-- FIM BOTÃO ACESSIBILIDADE -->
 
          <!-- INÍCIO ÁREA CADASTRO DE PRODUTOS -->
          <div class="area">

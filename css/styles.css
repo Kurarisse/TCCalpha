@@ -25,12 +25,40 @@ body{
 }
 /* FIM ESTILO CORPO */
 
+/* INÍCIO ESTILO CONTRASTE */
+.contraste{
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    justify-content: end;
+    align-items: center;
+    z-index: 2;
+    background-color: rgb(79, 77, 140);
+    padding-right: 10px;
+}
+
+#botaoContraste, #aumentoFonte{
+    border: none;
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(79, 77, 140);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+#botaoContraste img{
+    margin-left: 3px;
+}
+/* FIM ESTILO CONTRASTE */
 
 /* INÍCIO ESTILO LOGO */
 .logo{
     width:100px;
-    margin: 5px 5px 0 5px;
-    padding: 5px;
+    margin-right: 10px;
 }
 /* FIM ESTILO LOGO */
 
@@ -42,10 +70,44 @@ body{
     width: 100%;
     min-height: 100px;
     align-items: center;
+    justify-content: space-between;
     box-sizing: border-box;
     height: fit-content;
     background-color: rgb(79, 77, 140);
     box-shadow: 0px 5px 20px rgb(58, 56, 121);
+}
+
+.junto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.direita{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.alinha{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.alinha a{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.margem{
+    margin-left: 15px;
 }
 
 .menu{
@@ -88,6 +150,7 @@ body{
 
 #btnCelular{
     display: none;
+    margin-left: 20px;
 }
 
 @media (max-width:2000px){
@@ -95,7 +158,7 @@ body{
         display: block;
         position: absolute;
         width: 100%;
-        top: 110px;
+        top: 120px;
         left: 0;
         background-color: rgb(79, 77, 140);
         height: 0;
@@ -167,140 +230,19 @@ body{
 @media (max-width:600px){
     #busca{
         width: 100%;
-        max-width: 300px;
+        max-width: 170px;
         transition: none;
     }
 
     #barraPesquisa{
-        width: 300px;
+        width: 215px;
+    }
+
+    .logo{
+        display: none;
     }
 }
 /* FIM ESTILO BARRA DE PESQUISA */
-
-
-/* INÍCIO ESTILO BOTÃO DE ACESSIBILIDADE */
-.acessa{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-#btnAcessa{
-    display: flex;
-    cursor: pointer;
-    padding: 5px;
-    line-height: 10px;
-    background-color: rgb(132, 130, 216);
-    position: fixed;
-    top: 30px;
-    right: 35px;
-    border: none;
-    border-radius: 50%;
-    box-shadow: 4px 4px rgba(58, 56, 121, 0.6);
-    z-index: 1001;
-}
-
-.acessibilidade{
-    display: block;
-    position: fixed;
-    background-color: rgb(132, 130, 216);
-    width: 100%;
-    max-width: 300px;
-    top: 55px;
-    right: 25px;
-    visibility: hidden;
-    overflow-y: hidden;
-    border-radius: 25px;
-}
-
- #acessa.active .acessibilidade{
-    height: 120px;
-    visibility: visible;
-    overflow: auto;
-    background-color: rgb(132, 130, 216);
-    box-shadow: 4px 4px rgba(58, 56, 121, 0.6);
-    z-index: 100;
-    overflow: auto;
-}
-
-.acessibilidade{
-    list-style: none;
-    padding: 5px;
-    margin: 5px;
-}
-
-.acessibilidade li{
-    padding: 5px;
-    margin: 5px;
-}
-
-.daltonico{
-    padding: 5px;
-    margin-left: 2px;
-}
-
-.tamanho_fonte{
-    padding: 5px;
-    margin-left: 2px;
-}
-/* ESTILOS DAS UTILIDADES DE ACESSIBILIDADE */
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 38px;
-    height: 20px;
-  }
-  
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-  
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-}
-  
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 18px;
-    width: 18px;
-    top: 1px;
-    background-color: white;
-}
-  
-input:checked + .slider {
-    background-color: rgb(79, 77, 140);
-}
-  
-input:checked + .slider:before {
-    -webkit-transform: translateX(19px);
-    -ms-transform: translateX(19px);
-    transform: translateX(19px);
-}
-  
-.slider.round {
-    border-radius: 34px;
-}
-  
-.slider.round:before {
-    border-radius: 50%;
-}
-
-@media (max-width:1070px){
-    #acessibilidade{
-        top: 80px;
-        right: 30px;
-    }
-}
-/* FIM ESTILO BOTÃO DE ACESSIBILIDADE */
 
 
 /* INÍCIO ESTILO BANNER */

@@ -1,4 +1,6 @@
+let cart = [];
 let modalQt = 0;
+let key = 0;
 const c = (el)=>document.querySelector(el);
 const cs = (el)=>document.querySelectorAll(el);
 
@@ -21,7 +23,7 @@ modelsJson.map((item, index)=>{
     modelsItem.querySelector('a').addEventListener('click', (e)=>{
         e.preventDefault();
 
-        let key = e.target.closest('.models-item').getAttribute('data-key');
+        key = e.target.closest('.models-item').getAttribute('data-key');
         modalQt = 1;
 
         c('.modelsBig img').src = modelsJson[key].img;
@@ -49,6 +51,54 @@ modelsJson.map((item, index)=>{
             c('.modelsWindowArea').style.opacity = 1;
         }, 200);
     });
-    
+
     c('.models-area').append(modelsItem);
+});
+
+//AÇÕES DO MODAL
+function closeModal(){
+    c('.modelsWindowArea').style.opacity = 0;
+    setTimeout(()=>{
+        c('.modelsWindowArea').style.display ='none';
+    }, 500);
+}
+
+cs('.modelsInfo--cancelButton, .modelsInfo--cancelMobileButton').forEach((item)=>{
+    item.addEventListener('click', closeModal);
+});
+
+c('.modelsInfo--qtmenos').addEventListener('click', ()=>{
+
+    if(modalQt > 1){
+        modalQt--;
+    c('.modelsInfo--qt').innerHTML = modalQt;
+    }
+});
+
+c('.modelsInfo--qtmais').addEventListener('click', ()=>{
+    modalQt++;
+    c('.modelsInfo--qt').innerHTML = modalQt;
+});
+
+cs('.modelsInfo--size').forEach((size, sizeIndex)=>{
+    size.addEventListener('click', (e)=>{
+        c('.modelsInfo--size.selected').classList.remove('selected');
+        size.classList.add('selected');
+    });
+});
+
+c('.modelsInfo--addButton').addEventListener('click', ()=>{
+    //qual o modelo?
+
+    //qual o tamanho?
+    let size = parseInt(c('.modelsInfo--size.selected').getAttribute('data-key'));
+
+    //quantidade?
+
+    cart.push({
+        id:modelsJson[key].id,
+        size,
+        qt:modalQt
+    });
+    closeModal();
 });

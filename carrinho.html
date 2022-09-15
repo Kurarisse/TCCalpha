@@ -17,34 +17,102 @@ de cadastro, com um .blank que fica sobreposta nas outras páginas) -->
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
 
     <!-- IMPORTAÇÃO DE CSS -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
 </head>
 <body>
-
-    <!-- BOTÃO DE ACESSIBILIDADE -->
-    <div id="acessa">
-        <button id="btnAcessa" aria-label="Abrir menu de acessibilidade" aria-haspopup="true" aria-controls="acessibilidade" aria-expanded="false"><img src="img/acessibilidade.png" alt="Imagem de símbolo de acessibilidade" title="Menu de itens para acessibilidade"></button>
-
-            <ul class="acessibilidade" role="acessibilidade">
-                <li class="acessa">
-                    <li>
-                        <label class="switch" title="Adaptação para daltonismo">
-                            <input type="checkbox" name="daltonico" id="daltonico">
-                                <span class="slider round"></span>
-                        </label><span class="daltonico">Adaptação para daltônicos</span>
-                    </li>
-                    <li>
-                        <label class="switch" title="Adaptação para letras maiores">
-                        <input type="checkbox" name="tamanho_fonte" id="tamanho_fonte">
-                            <span class="slider round"></span>
-                    </label><span class="tamanho_fonte">Aumento de fonte</span>
-                    </li>
-                </li>
-            </ul>
+    <div class="models">
+        <div class="models-item">
+            <a href="#">
+                <div class="models-item--img">
+                    <img src="" alt="">
+                </div>
+                <div class="models-item--add">+</div>
+            </a>
+            <div class="models-item--price">R$ --</div>
+            <div class="models-item--name">--</div>
+            <div class="models-item--desc">--</div>
+        </div>
+        <div class="cart-item">
+            <img src="" alt="">
+            <div class="cart-item--qtarea">
+                <button class="cart-item--qtmenos">-</button>
+                <div class="cart-tem-qt">1</div>
+                <button class="cart-item--qtmais">+</button>
+            </div>
+        </div>
     </div>
-    <!-- FIM BOTÃO ACESSIBILIDADE -->
+
+    <header>
+        <div class="menu-openner">
+            <span>0</span>
+            <span class="material-icons">shopping_cart</span>
+        </div>
+    </header>
+
+    <main>
+        <h1>Modelos</h1>
+        <div class="modelo-area"></div>
+    </main>
+
+    <aside>
+        <div class="cart-area">
+            <div class="menu-closer">
+                <span class="material-icons">close</span>
+            </div>
+            <h1>Seus modelos</h1>
+            <div class="cart"></div>
+            <div class="cart-details">
+                <div class="cart-totalitem subtotal">
+                    <span>Subtotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart-totalitem desconto">
+                    <span>Desconto (-10%)</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart-finalizar">Finalizar a compra</div>
+            </div>
+        </div>
+    </aside>
+
+    <div class="modelsWindowArea">
+        <div class="modelsWindowBody">
+            <div class="modelsInfo--cancelMobileButton">Voltar</div>
+            <div class="modelsBig">
+                <img src="" alt="">
+            </div>
+            <div class="modelsInfo">
+                <h1>--</h1>
+                <div class="modelsInfo--desc">--</div>
+                <div class="modelsInfo--sizearea">
+                    <div class="modelsInfo--sector">Escala</div>
+                    <div class="modelsInfo--sizes">
+                        <div data-key="0" class="modelsInfo--size">1/72<span>--</span></div>
+
+                        <div data-key="1" class="modelsInfo--size">1/72<span>--</span></div>
+
+                        <div data-key="2" class="modelsInfo--size">1/72<span>--</span></div>
+                    </div>
+                </div>
+                <div class="modelsInfo--pricearea">
+                    <div class="modelsInfo--sector">Preço</div>
+                    <div class="modelsInfo--price">
+                        <div class="modelsInfo--actualPrice">R$ --</div>
+                        <div class="modelsInfo--qtarea">
+                            <button class="modelsInfo--qtmenos">-</button>
+                            <div class="modelsInfo--qt">1</div>
+                            <button class="modelsInfo--qtmais"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modelsInfo--addButton">Adicionar ao carrinho</div>
+                <div class="modelsInfo--cancelButton">Cancelar</div>
+            </div>
+        </div>
+    </div>
     
     <!-- IMPORTAÇÃO DE SCRIPTS -->
-    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/models.js"></script>
+    <script type="text/javascript" src="js/script2.js"></script>
 </body>
 </html>

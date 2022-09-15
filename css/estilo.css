@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #399ADE;
+    background-color: #EEE;
     font-size: 16px;
     display: flex;
     min-height: 100vh;
@@ -88,12 +88,13 @@ main{
     width: 200px;
     height: 200px;
     background-color: #EEE;
-    border-radius: 100px;
+    border-radius: 20px;
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.2);
 }
 
 .models-item--img img{
     width: 100%;
+    border-radius: 20px;
     height: auto;
 }
 
@@ -111,7 +112,7 @@ main{
     transition: all ease .2s;
 }
 
-.models-item a:hover .models-item-add{
+.models-item a:hover .models-item--add{
     background-color: #244C88;
 }
 
@@ -191,7 +192,7 @@ main{
     margin-top: 10px;
 }
 
-.models--sector{
+.modelsInfo--sector{
     color: #CCC;
     text-transform: uppercase;
     font-size: 14px;
@@ -199,7 +200,7 @@ main{
     margin-bottom: 10px;
 }
 
-.models--sizes{
+.modelsInfo--sizes{
     display: inline-flex;
     border-radius: 10px;
     overflow: hidden;
@@ -332,7 +333,7 @@ main{
     color: #333;
 }
 
-.cart-item00qt{
+.cart-item--qt{
     line-height: 30px;
     font-size: 12px;
     font-weight: bold;

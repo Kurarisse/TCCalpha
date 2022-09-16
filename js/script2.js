@@ -84,21 +84,43 @@ cs('.modelsInfo--size').forEach((size, sizeIndex)=>{
     size.addEventListener('click', (e)=>{
         c('.modelsInfo--size.selected').classList.remove('selected');
         size.classList.add('selected');
+        c('.modelsInfo--actualPrice').innerHTML = ('R$' + modelsJson[key].price[sizeIndex].toFixed(2));
     });
 });
 
 c('.modelsInfo--addButton').addEventListener('click', ()=>{
-    //qual o modelo?
-
-    //qual o tamanho?
+//modelo, tamanho e quantidade
     let size = parseInt(c('.modelsInfo--size.selected').getAttribute('data-key'));
+    let identifier = modelsJson[key].id+'@'+size;
+    let localId = cart.findIndex((item)=>item.identifier == identifier);
 
-    //quantidade?
-
-    cart.push({
-        id:modelsJson[key].id,
-        size,
-        qt:modalQt
-    });
+    if(localId > -1){
+        cart[localId].qt += modalQt;
+    }else{
+        cart.push({
+            identifier,
+            id:modelsJson[key].id,
+            size,
+            qt:modalQt
+        });
+    }
+    updateCart();
     closeModal();
 });
+
+function updateCart(){
+    if(cart.length > 0){
+        c('aside').classList.add('show');
+        c('cart').innerHTML = '';
+
+        cart.map((itemCart, index)=>{
+            let modelItem = modelsJson.find((itemBD)=>itemBD.id == itemCart.id);
+
+            let cartItem = c('.models .cart-item').cloneNode(true);
+
+            c('cart').append(cartItem);
+        });
+    }else{
+        c('aside').classList.remove('show');
+    }
+};

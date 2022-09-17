@@ -10,7 +10,7 @@
 
 /* INÍCIO ESTILOS GERAIS CORPO */
 body{
-    background-color:  rgb(132, 130, 216);
+    background-color:  rgb(198, 197, 227);
 }
 /* FIM ESTILOS GERAIS CORPO */
 
@@ -129,6 +129,7 @@ body{
 
 .menu li{
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 .menu li a{
@@ -224,7 +225,7 @@ body{
     border: none;
     outline: none;
     padding: 0;
-    width: 380px;
+    width: 325px;
     font-size: 17px;
     padding-left: 10px;
 }

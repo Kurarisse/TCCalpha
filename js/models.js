@@ -1,10 +1,10 @@
 let modelsJson = [
-    {id:1, name:'F4F Wildcat', img:'img/F4FWildcat.png', price:[100.00, 150.00, 200.00], sizes:['1/72', '1/48', '1/32'], description:'Caça utilizado nos primeiros anos de combate no pacífico pela marinha dos EUA'},
-    {id:2, name:'Focke Wulf Fw190 A5', img:'img/Fw190A5.png', price:[100.00, 150.00, 200.00], sizes:['1/72', '1/48', '1/32'], description:'Caça de motor em estrela da Luftwaffe, temido em médias e baixas altitudes'},
-    {id:3, name:'Ki 61 - Hien', img:'img/Ki61Hien.png', price:[100.00, 150.00, 200.00], sizes:['1/72', '1/48', '1/32'], description:'Caça fabricado pela Kawasaki para o exercito japones, com motor em linha'},
-    {id:4, name:'Me 109 G6', img:'img/Me109G6.png', price:[100.00, 150.00, 200.00], sizes:['1/72', '1/48', '1/32'], description:'Famoso caça da Messerchmnitt, voado pelos maiores ases da Luftwaffe, a versão G foi a mais produzida'},
-    {id:5, name:'P47 D - Thunderbolt', img:'img/P47D.png', price:[100.00, 150.00, 200.00], sizes:['1/72', '1/48', '1/32'], description:'Caça bombardeiro de fabricação americana utilizado pela FAB'},
-    {id:6, name:'P51 D - Mustang', img:'img/P51D.png', price:[100.00, 150.00, 200.00], sizes:['1/72', '1/48', '1/32'], description:'O mais conhecido caça americano, importante escolta para os bombardeiros diurnos'},
-    {id:7, name:'Spitfire Mk-IX', img:'img/SpitMk9.png', price:[100.00, 150.00, 200.00], sizes:['1/72', '1/48', '1/32'], description:'O mais famosa caça britânico, utilizado em toda a guerra'},
-    {id:8, name:'A6M Zero', img:'img/Zero.png', price:[100.00, 150.00, 200.00], sizes:['1/72', '1/48', '1/32'], description:'O mais famoso caça da marinha japonesa, terror do pacífico nos anos iníciais da guerra'}
+    {id:1, name:'Produto 1', img:'img/produto1.png', price:[30.00, 35.00, 40.00], sizes:['PP', 'P', 'M', 'G'], description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'},
+    {id:2, name:'Produto 2', img:'img/produto2.png', price:[20.00, 25.00, 30.00], sizes:['PP', 'P', 'M', 'G'], description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'},
+    {id:3, name:'Produto 3', img:'img/produto3.png', price:[25.00, 30.00, 35.00], sizes:['PP', 'P', 'M', 'G'], description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'},
+    {id:4, name:'Produto 4', img:'img/produto4.png', price:[50.00, 55.00, 60.00], sizes:['PP', 'P', 'M', 'G'], description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'},
+    {id:5, name:'Produto 5', img:'img/produto5.png', price:[45.00, 50.00, 55.00], sizes:['PP', 'P', 'M', 'G'], description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'},
+    {id:6, name:'Produto 6', img:'img/produto6.png', price:[50.00, 55.00, 60.00], sizes:['PP', 'P', 'M', 'G'], description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'},
+    {id:7, name:'Produto 7', img:'img/produto7.png', price:[40.00, 45.00, 50.00], sizes:['PP', 'P', 'M', 'G'], description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'},
+    {id:8, name:'Produto 8', img:'img/produto8.png', price:[50.00, 55.00, 60.00], sizes:['PP', 'P', 'M', 'G'], description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'}
 ];

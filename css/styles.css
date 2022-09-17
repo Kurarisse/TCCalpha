@@ -10,7 +10,7 @@
 
 /* INÍCIO ESTILOS GERAIS CORPO */
 body{
-    background-color: rgb(198, 197, 227);
+    background-color:  #230f41;
 }
 /* FIM ESTILOS GERAIS CORPO */
 
@@ -33,7 +33,7 @@ body{
     justify-content: end;
     align-items: center;
     z-index: 2;
-    background-color: rgb(79, 77, 140);
+    background-color: rgb(29, 1, 43);
     padding-right: 10px;
 }
 
@@ -44,7 +44,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-color: rgb(79, 77, 140);
+    background-color: rgb(29, 1, 43);
     color: rgb(255, 255, 255);
     cursor: pointer;
     margin-right: 5px;
@@ -73,8 +73,8 @@ body{
     justify-content: space-between;
     box-sizing: border-box;
     height: fit-content;
-    background-color: rgb(79, 77, 140);
-    box-shadow: 0px 5px 20px rgb(58, 56, 121);
+    background-color: rgb(29, 1, 43);
+    /* box-shadow: 0px 5px 20px rgb(58, 56, 121); */
 }
 
 .junto{
@@ -134,7 +134,7 @@ body{
 .hover a:hover{
     border-radius: 10px;
     background-color: rgb(58, 56, 121);
-    box-shadow: 3px 3px rgba(58, 56, 121, 0.5);
+    /* box-shadow: 3px 3px rgba(58, 56, 121, 0.5); */
     padding: 10px;
     color: rgb(255, 255, 255);
 }
@@ -160,7 +160,7 @@ body{
         width: 100%;
         top: 120px;
         left: 0;
-        background-color: rgb(79, 77, 140);
+        background-color: rgb(29, 1, 43);
         height: 0;
         transition: .6s;
         z-index: 10;
@@ -177,7 +177,7 @@ body{
     #btnCelular{
         display: flex;
         cursor: pointer;
-        background-color: rgb(79, 77, 140);
+        background-color: rgb(29, 1, 43);
         border: none;
         font-size: 20px;
     }
@@ -237,10 +237,10 @@ body{
     #barraPesquisa{
         width: 215px;
     }
-
+/* 
     .logo{
         display: none;
-    }
+    } */
 }
 /* FIM ESTILO BARRA DE PESQUISA */
 
@@ -258,6 +258,7 @@ body{
 /* ESTILO TÍTULO */
 .titulo{
     margin: 20px auto;
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 /* FIM ESTILO TÍTULO */
@@ -298,7 +299,7 @@ body{
     padding: 10px 25px;
     margin: 0 20px 70px 20px;
     border: 2px solid rgb(48, 48, 48);
-    box-shadow: 0 4px 8px 0 rgba(58, 56, 121, 0.5);
+    /* box-shadow: 0 4px 8px 0 rgba(58, 56, 121, 0.5); */
     transition: 0.3s;
     justify-content: center;
     align-items: center;
@@ -308,7 +309,7 @@ body{
 }
 
 .produto:hover{
-    box-shadow: 0 8px 16px 0 rgba(58, 56, 121, 0.8);
+    /* box-shadow: 0 8px 16px 0 rgba(58, 56, 121, 0.8); */
 }
 /* FIM ESTILO PRODUTOS */
 
@@ -330,7 +331,7 @@ body{
     max-height: 600px;
     margin: 50px auto;
     display: flex;
-    box-shadow: 5px 5px 10px rgba(58, 56, 121, 0.5);
+    /* box-shadow: 5px 5px 10px rgba(58, 56, 121, 0.5); */
 }
 
 .addDoc{
@@ -366,7 +367,7 @@ body{
 
 .login-button button{
     border: none;
-    background-color: rgb(132, 130, 216);
+    background-color: #230f41;
     padding: 8px 10px;
     margin-left: 45px;
     border-radius: 5px;
@@ -374,7 +375,7 @@ body{
 }
 
 .login-button button:hover{
-    background-color: rgb(103, 101, 173);
+    background-color: #230f41;
 }
 
 .login-button button a{
@@ -436,7 +437,10 @@ body{
     padding: 15px 20px;
     border: none;
     border-radius: 10px;
-    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(29, 1, 43);
+    /* box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5); */
 }
 
 .box select{
@@ -444,22 +448,24 @@ body{
     padding: 10px 15px;
     border: none;
     border-radius: 10px;
+    color: rgb(255, 255, 255);
     justify-content: center;
-    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+    background-color: rgb(29, 1, 43);
+    /* box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5); */
 }
 
 .box input:focus-visible, .box select:focus-visible{
     outline: 1px solid rgb(132, 130, 216);
 }
 
-.box label, .gender-input label, .gender-inputs h6{
+.box label{
     font-size: 16px;
     font-weight: 500;
     color: rgb(0, 0, 0);
 }
 
 .box input::placeholder{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 14px;
 }
 
@@ -477,7 +483,7 @@ body{
     padding: 15px 20px;
     border: none;
     border-radius: 10px;
-    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5); */
 }
 
 .miniDesc{
@@ -494,7 +500,7 @@ body{
 .butao button{
     width: 100%;
     border: none;
-    background-color: rgb(132, 130, 216);
+    background-color: #230f41;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -573,7 +579,7 @@ body{
 }
 
 .branco{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(29, 1, 43);
 }
 
 .box p{
@@ -581,7 +587,7 @@ body{
     padding: 10px;
     border: none;
     border-radius: 10px;
-    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5); */
 }
 /* FIM ESTILO COMENTÁRIOS */
 
@@ -595,7 +601,7 @@ body{
     margin: 50px auto;
     border-radius: 15px;
     display: flex;
-    box-shadow: 5px 5px 10px rgba(58, 56, 121, 0.5);
+    /* box-shadow: 5px 5px 10px rgba(58, 56, 121, 0.5); */
 }
 
 .comentPerfil{
@@ -641,7 +647,7 @@ body{
     border: none;
     background-color: rgb(132, 130, 216);
     color: rgb(0, 0, 0);
-    box-shadow: 2px 2px 8px rgb(58, 56, 121);
+    /* box-shadow: 2px 2px 8px rgb(58, 56, 121); */
     border-radius: 15px;
     padding: 5px;
     font-size: 16px;
@@ -672,11 +678,11 @@ body{
 /* INÍCIO ESTILO RODAPÉ */
 #footer{
     text-align: center;
-    background-color: rgb(79, 77, 140);
+    background-color: rgb(29, 1, 43);
     height: 130px;
     padding-top: 25px;
     margin-top: 20px;
-    box-shadow: 5px 0 20px rgb(58, 56, 121);
+    /* box-shadow: 5px 0 20px rgb(58, 56, 121); */
     width: 100%;
 }
 

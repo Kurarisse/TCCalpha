@@ -10,7 +10,7 @@
 
 /* INÍCIO ESTILOS GERAIS CORPO */
 body{
-    background-color:  #230f41;
+    background-color:  rgb(132, 130, 216);
 }
 /* FIM ESTILOS GERAIS CORPO */
 
@@ -25,26 +25,29 @@ body{
 }
 /* FIM ESTILO CORPO */
 
+
 /* INÍCIO ESTILO CONTRASTE */
 .contraste{
     width: 100%;
     display: flex;
     height: fit-content;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     z-index: 2;
-    background-color: rgb(29, 1, 43);
+    padding: 5px;
+    padding-left: 15px;
+    background-color: rgb(79,77,140);
     padding-right: 10px;
 }
 
 #botaoContraste, #aumentoFonte{
     border: none;
     display: flex;
-    font-size: 12px;
+    font-size: 17px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-color: rgb(29, 1, 43);
+    background-color: rgb(79,77,140);
     color: rgb(255, 255, 255);
     cursor: pointer;
     margin-right: 5px;
@@ -55,10 +58,13 @@ body{
 }
 /* FIM ESTILO CONTRASTE */
 
+
 /* INÍCIO ESTILO LOGO */
 .logo{
     width:100px;
     margin-right: 10px;
+    margin-left: 15px;
+    padding-top: 5px;
 }
 /* FIM ESTILO LOGO */
 
@@ -70,11 +76,11 @@ body{
     width: 100%;
     min-height: 100px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     box-sizing: border-box;
     height: fit-content;
-    background-color: rgb(29, 1, 43);
-    /* box-shadow: 0px 5px 20px rgb(58, 56, 121); */
+    background-color: rgb(79,77,140);
+    box-shadow: 0px 5px 20px rgb(58, 56, 121);
 }
 
 .junto{
@@ -88,13 +94,18 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+    padding-right: 15px;
 }
 
 .alinha{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: end;
+    justify-content: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 .alinha a{
@@ -103,11 +114,12 @@ body{
     margin-right: 10px;
     justify-content: center;
     align-items: center;
+    font-size: 17px;
     color: rgb(255, 255, 255);
 }
 
 .margem{
-    margin-left: 15px;
+    margin-left: 35px;
 }
 
 .menu{
@@ -134,7 +146,7 @@ body{
 .hover a:hover{
     border-radius: 10px;
     background-color: rgb(58, 56, 121);
-    /* box-shadow: 3px 3px rgba(58, 56, 121, 0.5); */
+    box-shadow: 3px 3px rgba(58, 56, 121, 0.5);
     padding: 10px;
     color: rgb(255, 255, 255);
 }
@@ -150,7 +162,7 @@ body{
 
 #btnCelular{
     display: none;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 @media (max-width:2000px){
@@ -158,9 +170,9 @@ body{
         display: block;
         position: absolute;
         width: 100%;
-        top: 120px;
+        top: 105px;
         left: 0;
-        background-color: rgb(29, 1, 43);
+        background-color: rgb(79,77,140);
         height: 0;
         transition: .6s;
         z-index: 10;
@@ -177,7 +189,7 @@ body{
     #btnCelular{
         display: flex;
         cursor: pointer;
-        background-color: rgb(29, 1, 43);
+        background-color: rgb(79,77,140);
         border: none;
         font-size: 20px;
     }
@@ -193,6 +205,7 @@ body{
 /* INÍCIO ESTILO BARRA DE PESQUISA */
 #barraPesquisa{
     margin: 5px 25px;
+    width: 380px;
     padding: 5px;
     background-color: rgb(255, 255, 255);
     height: 45px;
@@ -202,15 +215,18 @@ body{
     align-items: center;
 }
 
+#barraPesquisa input::placeholder{
+    color: rgb(0, 0, 0);
+}
+
 #busca{
     display: flex;
     border: none;
-    background-color: rgb(255, 255, 255);
     outline: none;
     padding: 0;
+    width: 380px;
     font-size: 17px;
-    width: 0;
-    transition: 0.4s;
+    padding-left: 10px;
 }
 
 .lupa{
@@ -223,7 +239,7 @@ body{
     cursor: pointer;
 }
 
-#barraPesquisa:hover > #busca{
+/* #barraPesquisa:hover > #busca{
     width: 350px;
 }
 
@@ -240,8 +256,8 @@ body{
 /* 
     .logo{
         display: none;
-    } */
-}
+    }
+} */
 /* FIM ESTILO BARRA DE PESQUISA */
 
 
@@ -258,7 +274,7 @@ body{
 /* ESTILO TÍTULO */
 .titulo{
     margin: 20px auto;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 /* FIM ESTILO TÍTULO */
@@ -299,7 +315,7 @@ body{
     padding: 10px 25px;
     margin: 0 20px 70px 20px;
     border: 2px solid rgb(48, 48, 48);
-    /* box-shadow: 0 4px 8px 0 rgba(58, 56, 121, 0.5); */
+    box-shadow: 0 4px 8px 0 rgba(58, 56, 121, 0.5);
     transition: 0.3s;
     justify-content: center;
     align-items: center;
@@ -309,7 +325,7 @@ body{
 }
 
 .produto:hover{
-    /* box-shadow: 0 8px 16px 0 rgba(58, 56, 121, 0.8); */
+    box-shadow: 0 8px 16px 0 rgba(58, 56, 121, 0.8);
 }
 /* FIM ESTILO PRODUTOS */
 
@@ -331,7 +347,7 @@ body{
     max-height: 600px;
     margin: 50px auto;
     display: flex;
-    /* box-shadow: 5px 5px 10px rgba(58, 56, 121, 0.5); */
+    box-shadow: 5px 5px 10px rgba(58, 56, 121, 0.5);
 }
 
 .addDoc{
@@ -367,7 +383,7 @@ body{
 
 .login-button button{
     border: none;
-    background-color: #230f41;
+    background-color: rgb(103, 101, 173);
     padding: 8px 10px;
     margin-left: 45px;
     border-radius: 5px;
@@ -375,7 +391,7 @@ body{
 }
 
 .login-button button:hover{
-    background-color: #230f41;
+    background-color: rgb(79,77,140);
 }
 
 .login-button button a{
@@ -395,8 +411,8 @@ body{
     width: 50%;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    flex-direction: column;
     background-color:#e6e6e6;
     padding: 15px;
 }
@@ -433,25 +449,27 @@ body{
 }
 
 .box input, .box textarea, .img{
-    margin: 10px;
-    padding: 15px 20px;
+    display: flex;
+    margin: 5px;
+    padding: 15px;
     border: none;
     border-radius: 10px;
-    font-size: 17px;
+    font-size: 16px;
     color: rgb(255, 255, 255);
-    background-color: rgb(29, 1, 43);
-    /* box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5); */
+    /* background-color: rgb(29, 1, 43); */
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
 }
 
 .box select{
+    display: flex;
     margin: 10px;
     padding: 10px 15px;
     border: none;
     border-radius: 10px;
     color: rgb(255, 255, 255);
     justify-content: center;
-    background-color: rgb(29, 1, 43);
-    /* box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5); */
+    /* background-color: rgb(29, 1, 43); */
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
 }
 
 .box input:focus-visible, .box select:focus-visible{
@@ -459,14 +477,15 @@ body{
 }
 
 .box label{
+    display: flex;
     font-size: 16px;
     font-weight: 500;
     color: rgb(0, 0, 0);
 }
 
 .box input::placeholder{
-    color: rgb(255, 255, 255);
-    font-size: 14px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
 }
 
 .descProduto{
@@ -483,7 +502,7 @@ body{
     padding: 15px 20px;
     border: none;
     border-radius: 10px;
-    /* box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5); */
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
 }
 
 .miniDesc{
@@ -500,20 +519,19 @@ body{
 .butao button{
     width: 100%;
     border: none;
-    background-color: #230f41;
+    background-color: rgb(103, 101, 173);
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .butao button:hover{
-    background-color: rgb(103, 101, 173);
+    background-color: rgb(79,77,140);
 }
 
 .butao button a{
     text-decoration: none;
     font-size: 17px;
-    font-weight: 600;
     color: rgb(255, 255, 255);
 }
 
@@ -542,9 +560,9 @@ body{
     }
 
     .boxes{
-        flex-direction: column;
+        display: flex;
         overflow-y: scroll;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         max-height: 200px;
         padding-right: 15px;
     }
@@ -579,7 +597,7 @@ body{
 }
 
 .branco{
-    background-color: rgb(29, 1, 43);
+    background-color: rgb(255, 255, 255);
 }
 
 .box p{
@@ -587,7 +605,7 @@ body{
     padding: 10px;
     border: none;
     border-radius: 10px;
-    /* box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5); */
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
 }
 /* FIM ESTILO COMENTÁRIOS */
 
@@ -599,9 +617,10 @@ body{
     height: 100%;
     max-height: 600px;
     margin: 50px auto;
+    margin-top: 60px;
     border-radius: 15px;
     display: flex;
-    /* box-shadow: 5px 5px 10px rgba(58, 56, 121, 0.5); */
+    box-shadow: 5px 5px 10px rgba(58, 56, 121, 0.5);
 }
 
 .comentPerfil{
@@ -645,23 +664,43 @@ body{
 
 .infoPerfil button{
     border: none;
-    background-color: rgb(132, 130, 216);
+    background-color: rgb(103, 101, 173);
     color: rgb(0, 0, 0);
-    /* box-shadow: 2px 2px 8px rgb(58, 56, 121); */
+    box-shadow: 2px 2px 8px rgb(58, 56, 121);
     border-radius: 15px;
     padding: 5px;
     font-size: 16px;
     margin-top: 10px;
     margin-bottom: 5px;
 }
+
+.infoPerfil button:hover{
+    background-color: rgb(79,77,140);
+}
+
+.infoPerfil button:hover a{
+    color: rgb(255, 255, 255);
+}
 /* FIM ESTILO PERFIL */
 
 
 /* INÍCIO ESTILO PÁGINA SOBRE */
+.sobre{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
 .intro{
     background-color: rgb(255, 255, 255);
     width: 100%;
+    border-radius: 10px;
     max-width: 1500px;
+    box-shadow: 5px 5px 10px rgba(58, 56, 121, 0.5);
     margin: 40px auto;
     padding: 10px;
 }
@@ -669,20 +708,23 @@ body{
 .principal{
     background-color: rgb(255, 255, 255);
     width: 100%;
+    border-radius: 10px;
     max-width: 1500px;
+    box-shadow: 5px 5px 10px rgba(58, 56, 121, 0.5);
     margin: 20px auto;
     padding: 10px;
 }
 /* FIM ESTILO PÁGINA SOBRE */
 
+
 /* INÍCIO ESTILO RODAPÉ */
 #footer{
     text-align: center;
-    background-color: rgb(29, 1, 43);
+    background-color: rgb(79,77,140);
     height: 130px;
     padding-top: 25px;
     margin-top: 20px;
-    /* box-shadow: 5px 0 20px rgb(58, 56, 121); */
+    box-shadow: 5px 0 20px rgb(58, 56, 121);
     width: 100%;
 }
 

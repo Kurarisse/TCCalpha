@@ -52,7 +52,7 @@ modelsJson.map((item, index)=>{
         }, 200);
     });
 
-    c('.models-area').append(modelsItem);
+    c('.models--area').append(modelsItem);
 });
 
 //AÇÕES DO MODAL
@@ -131,8 +131,8 @@ function updateCart(){
 
             cartItem.querySelector('img').src = modelItem.img;
             cartItem.querySelector('.cart-item--name').innerHTML = `${modelItem.name} (${modelSizeName})`;
-            cartItem.querySelector('.cart--item--qt').innerHTML = itemCart.qt;
-            cartItem.querySelector('.cart--item-qtmenos').addEventListener('click',()=>{
+            cartItem.querySelector('.cart-item--qt').innerHTML = itemCart.qt;
+            cartItem.querySelector('.cart-item--qtmenos').addEventListener('click',()=>{
                 if(itemCart.qt > 1) {
                     itemCart.qt--
                 } else {
@@ -140,7 +140,7 @@ function updateCart(){
                 }
                 updateCart();
             });
-            cartItem.querySelector('.cart--item-qtmais').addEventListener('click',()=>{
+            cartItem.querySelector('.cart-item--qtmais').addEventListener('click',()=>{
                 itemCart.qt++;
                 updateCart();
             });

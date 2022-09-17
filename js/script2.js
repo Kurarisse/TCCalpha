@@ -147,6 +147,11 @@ c('.menu-closer').addEventListener('click', ()=>{
     c('aside').style.left='100vw';
 });
 
+c('.cart--finalizar').addEventListener('click', ()=>{
+    cart = [];
+    updateCart();
+})
+
 
 function updateCart() {
     c('.menu-openner span').innerHTML = cart.length;

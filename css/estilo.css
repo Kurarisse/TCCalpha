@@ -1,13 +1,3 @@
-/*
-=========================================================================
-Nome do Projeto: Carrinho de Compras em Javascript
-Finalidade: Cursos de Informática do IFSP campus Caraguatatuba 
-Fonte Base: Projetos do Curso B7Web - https://b7web.com.br/ 
-Autor: Denny Paulista Azevedo Filho
-License: MIT License
-========================================================================= 
-*/
-
 * {
     box-sizing: border-box;
 }
@@ -25,19 +15,23 @@ body {
     display:none;
 }
 
-header {
-    position: fixed;
-    left:0;
-    top:0;
-    right:0;
-    height:60px;
-    background-color:#399ade;
-    display:none;
-    justify-content: flex-end;
+.coluna{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
+.header {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color:#399ade;
+}
+
 .menu-openner {
+    margin-bottom: 15px;
     margin-right: 15px;
     font-size: 26px;
     background-color: #a9dcff;
@@ -56,16 +50,24 @@ header {
     font-size: 30px;
 }
 
+.linha{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
 aside {
     background-color:#9ccbe6;
     width:0vw;
     font-family:'Hepta Slab', Helvetica, Arial;
     transition:all ease .2s;
-    overflow-x:hidden;
+    overflow-y: auto;
 }
 
 aside.show {
-    width:30vw;
+    width:35vw;
+    padding-top: 10px;
+    z-index: 2;
 }
 
 .cart--area {
@@ -83,7 +85,8 @@ h1 {
 
 .models-area {
     display:grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 10px;
 }
 
 .models-item {
@@ -155,6 +158,7 @@ h1 {
     position:fixed;
     left:0;
     top:0;
+    z-index: 2;
     bottom:0;
     right:0;
     background-color:rgba(255, 255, 255, 0.5);
@@ -311,6 +315,7 @@ h1 {
     display:none;
     height:40px;
     text-align:center;
+    font-size: 18px;
     line-height: 40px;
     margin-bottom:30px;
 }

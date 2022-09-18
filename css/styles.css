@@ -75,6 +75,7 @@ body{
     flex-wrap: wrap;
     width: 100%;
     min-height: 100px;
+    z-index: 1;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
@@ -206,7 +207,7 @@ body{
 /* INÍCIO ESTILO BARRA DE PESQUISA */
 #barraPesquisa{
     margin: 5px 25px;
-    width: 380px;
+    width: 350px;
     padding: 5px;
     background-color: rgb(255, 255, 255);
     height: 45px;
@@ -239,26 +240,6 @@ body{
     align-items: center;
     cursor: pointer;
 }
-
-/* #barraPesquisa:hover > #busca{
-    width: 350px;
-}
-
-@media (max-width:600px){
-    #busca{
-        width: 100%;
-        max-width: 170px;
-        transition: none;
-    }
-
-    #barraPesquisa{
-        width: 215px;
-    }
-/* 
-    .logo{
-        display: none;
-    }
-} */
 /* FIM ESTILO BARRA DE PESQUISA */
 
 
@@ -523,6 +504,7 @@ body{
     background-color: rgb(103, 101, 173);
     padding: 10px;
     border-radius: 5px;
+    margin-top: 10px;
     cursor: pointer;
 }
 
@@ -675,12 +657,12 @@ body{
     margin-bottom: 5px;
 }
 
-.infoPerfil button:hover{
-    background-color: rgb(79,77,140);
+.infoPerfil button a{
+    color: rgb(255, 255, 255);
 }
 
-.infoPerfil button:hover a{
-    color: rgb(255, 255, 255);
+.infoPerfil button:hover{
+    background-color: rgb(79,77,140);
 }
 /* FIM ESTILO PERFIL */
 
@@ -724,7 +706,7 @@ body{
     background-color: rgb(79,77,140);
     height: 130px;
     padding-top: 25px;
-    margin-top: 20px;
+    z-index: 10;
     box-shadow: 5px 0 20px rgb(58, 56, 121);
     width: 100%;
 }

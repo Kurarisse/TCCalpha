@@ -1,45 +1,29 @@
-/*
-=========================================================================
-Nome do Projeto: Carrinho de Compras em Javascript
-Finalidade: Cursos de Informática do IFSP campus Caraguatatuba 
-Fonte Base: Projetos do Curso B7Web - https://b7web.com.br/ 
-Autor: Denny Paulista Azevedo Filho
-License: MIT License
-========================================================================= 
-*/
-
 let cart = [];
 let modalQt = 0;
 let key = 0;
-//constante para carregar estrutura, limpando o código
-const c = (el)=>document.querySelector(el); //para localizar o primeiro item
-const cs = (el)=>document.querySelectorAll(el); //para localizar todos os itens
 
-//Vamos mapear nossos dados recebidos via Json
-//Criando a lista de produtos, modelos
+const c = (el)=>document.querySelector(el);
+const cs = (el)=>document.querySelectorAll(el);
+
+
 modelsJson.map((item, index)=>{
-    //Vamos pegar a estrutura HTML que tem a class 'models-item', 
-    //dentro da class 'models' e clonar - true indica para pegar subitens
-    //let modelsItem = document.querySelector('.models .models-item').cloneNode(true);
-    //Depois de ajustado com a constante
+
     let modelsItem = c('.models .models-item').cloneNode(true);
-    // preenchendo as informações dos modelos
-    //acrescentar um identificador para a pizza - FrontEnd
+
     modelsItem.setAttribute('data-key', index);
     modelsItem.querySelector('.models-item--img img').src= item.img;
     modelsItem.querySelector('.models-item--price').innerHTML = `R$ ${item.price[0].toFixed(2)}`;
-    //iniciar pelo nome -- o mais simples
+
     modelsItem.querySelector('.models-item--name').innerHTML = item.name;
     modelsItem.querySelector('.models-item--desc').innerHTML = item.description;
-    //Adicionar o evento de click ao tag <a> que temos envolvendo a imagem e o "+"
-    //Vai abrir o Modal - Janela
+
     modelsItem.querySelector('a').addEventListener('click', (e)=>{
-        e.preventDefault(); //Previne a ação padrão que iria atualizar a tela
+        e.preventDefault();
         //let key = e.target.closest('.models-item').getAttribute('data-key'); //pegando informação do identificador
-        //Transforma a variável key em global.
+
         key = e.target.closest('.models-item').getAttribute('data-key'); //pegando informação do identificador
         modalQt = 1;
-        //Alimentando os dados do Modal
+ 
         c('.modelsBig img').src = modelsJson[key].img;
         c('.modelsInfo h1').innerHTML = modelsJson[key].name;
         c('.modelsInfo--desc').innerHTML = modelsJson[key].description;
@@ -54,29 +38,28 @@ modelsJson.map((item, index)=>{
             size.querySelector('span').innerHTML = modelsJson[key].sizes[sizeIndex];
         });
         c('.modelsInfo--qt').innerHTML = modalQt;
-        //Mostrar a janela Modal
-        c('.modelsWindowArea').style.opacity = 0; //criando uma animação
-        //corrigir, faltou o "a" do opacity - Valeu Gilberto dos Santos.
+
+        c('.modelsWindowArea').style.opacity = 0;
+
         c('.modelsWindowArea').style.display = 'flex';
         setTimeout(()=> {
-            c('.modelsWindowArea').style.opacity = 1; //mostrando a janela, sem Timeout, não vemos o efeito
+            c('.modelsWindowArea').style.opacity = 1;
         }, 200);
     });
 
-    //preenchendo as informações no site
-    //Depois de ajustado com a constante
+
     //document.querySelector('.models-area').append(modelsItem);
     c('.models-area').append(modelsItem);
 });
 
-//Ações do Modal - janela
+
 function closeModal(){
-    c('.modelsWindowArea').style.opacity = 0; //criando uma animação
+    c('.modelsWindowArea').style.opacity = 0;
     setTimeout(()=> {
-        c('.modelsWindowArea').style.display = 'none'; //fechando a janela, sem Timeout, não vemos o efeito
+        c('.modelsWindowArea').style.display = 'none';
     }, 500);
-    //mostrar o funcionamento via console do navegador, antes de atribuir aos botões
 }
+
 
 cs('.modelsInfo--cancelButton, .modelsInfo--cancelMobileButton').forEach((item)=>{
     item.addEventListener('click', closeModal);
@@ -104,24 +87,16 @@ cs('.modelsInfo--size').forEach((size, sizeIndex)=>{
 });
 
 c('.modelsInfo--addButton').addEventListener('click', ()=>{
-    //Precisamos saber:
     //Qual o modelo?
     //console.log("Modelo: " + key);
     //qual o tamanho?
-    //a leitura é como string, devemos transformar em número
     //let size = c('.modelsInfo--size.selected').getAttribute('data-key'); 
     let size = parseInt(c('.modelsInfo--size.selected').getAttribute('data-key'));
     //console.log("Tamanho: " + size);
     //Quantidade?
     //console.log("Quantidade: " + modalQt)
-    //Quando adicionamos de forma sucessiva o mesmo item, e mesmo tamanho, não podemos ter várias entradas
-    //Isso é o que ocorre atualmente, precisamos de ajustes
-    //Antes de adicionar devemos verificar se já existe aquele item com aquele tamanho
-    //para isso funcionar vamos criar um identificador
     let identifier = modelsJson[key].id+'@'+size;
-    //vamos verificar se este identificador já está no carrinho
     let locaId = cart.findIndex((item)=>item.identifier == identifier);
-    //se tiver adiciona a quantidade no item já existente, senão acrescento
     if(locaId > -1){
         cart[locaId].qt += modalQt;
     } else {
@@ -136,7 +111,7 @@ c('.modelsInfo--addButton').addEventListener('click', ()=>{
     closeModal();
 });
 
-//ajustando o mobile
+
 c('.menu-openner').addEventListener('click', ()=>{
     if(cart.length > 0){
         c('aside').style.left = '0';
@@ -150,15 +125,15 @@ c('.menu-closer').addEventListener('click', ()=>{
 c('.cart--finalizar').addEventListener('click', ()=>{
     cart = [];
     updateCart();
-})
+});
 
 
 function updateCart() {
     c('.menu-openner span').innerHTML = cart.length;
     if(cart.length > 0) {
         c('aside').classList.add('show');
-        c('.cart').innerHTML = ''; //limpo o carinho - visual
-        //Fechando valores
+        c('.cart').innerHTML = '';
+
         let subtotal = 0;
         let desconto = 0;
         let total = 0;
@@ -167,7 +142,7 @@ function updateCart() {
             subtotal += modelItem.price[itemCart.size] * itemCart.qt;
             //console.log(modelItem);
             let cartItem = c('.models .cart--item').cloneNode(true);
-            //Alternativa
+
             let modelSizeName;
             switch(itemCart.size) {
                 case 0:

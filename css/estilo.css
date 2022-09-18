@@ -1,10 +1,10 @@
 * {
     box-sizing: border-box;
+    font-family: 'Kanit', sans-serif, 'Arial';
 }
 
 body {
     background-color:#EEE;
-    font-family:'Lato',Helvetica,Arial;
     font-size:15px;
     display:flex;
     margin:0;
@@ -34,9 +34,11 @@ body {
     margin-bottom: 15px;
     margin-right: 15px;
     font-size: 26px;
-    background-color: #a9dcff;
+    background-color: #e0c43bec;
+    z-index: 2;
     padding: 5px 20px;
     border-radius: 5px;
+    border: 2px solid rgb(0, 0, 0);
 }
 
 .menu-openner span {
@@ -46,7 +48,6 @@ body {
 .menu-closer {
     width:32px;
     height:32px;
-    display:none;
     font-size: 30px;
 }
 
@@ -57,9 +58,8 @@ body {
 
 }
 aside {
-    background-color:#9ccbe6;
+    background-color:rgb(227, 226, 245);
     width:0vw;
-    font-family:'Hepta Slab', Helvetica, Arial;
     transition:all ease .2s;
     overflow-y: auto;
 }
@@ -67,7 +67,8 @@ aside {
 aside.show {
     width:35vw;
     padding-top: 10px;
-    z-index: 2;
+    z-index: 3;
+    transition:all ease .2s;
 }
 
 .cart--area {
@@ -79,20 +80,22 @@ main {
     padding:20px;
 }
 
-h1 {
-    font-family:'Hepta Slab', Helvetica, Arial;
+main h1{
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
 }
 
 .models-area {
     display:grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .models-item {
     text-align: center;
     max-width:250px;
-    font-family:'Hepta Slab', Helvetica, Arial;
     margin:0 auto 50px auto;
 }
 
@@ -122,7 +125,7 @@ h1 {
     height:50px;
     line-height:50px;
     border-radius:25px;
-    background-color:#388bc5;
+    background-color:rgb(103, 101, 173);
     text-align:center;
     color:#FFF;
     font-size:22px;
@@ -132,7 +135,7 @@ h1 {
 }
 
 .models-item a:hover .models-item--add {
-    background-color:#244c88;
+    background-color:rgb(79,77,140);
 }
 
 .models-item--price {
@@ -199,7 +202,6 @@ h1 {
 
 .modelsInfo {
     flex:1;
-    font-family:'Hepta Slab', Helvetica, Arial;
     padding-bottom:50px;
 }
 
@@ -211,7 +213,6 @@ h1 {
     font-size:15px;
     color:#999;
     margin-top:10px;
-    font-family:'Lato',Helvetica,Arial;
 }
 
 .modelsInfo--sector {
@@ -312,7 +313,7 @@ h1 {
 }
 
 .modelsInfo--cancelMobileButton {
-    display:none;
+    display:none; 
     height:40px;
     text-align:center;
     font-size: 18px;
@@ -387,17 +388,17 @@ h1 {
 .cart--finalizar {
     padding:20px 30px;
     border-radius:20px;
-    background-color:#48d05f;
+    background-color:rgb(103, 101, 173);
     color:#FFF;
     cursor:pointer;
     text-align:center;
     margin-top:20px;
-    border:2px solid #63f77c;
+    border:2px solid rgb(79,77,140);
     transition: all ease .2s;
 }
 
 .cart--finalizar:hover {
-    background-color:#35af4a;
+    background-color:rgb(79,77,140);
 }
 
 @media (max-width:1000px) {
@@ -431,7 +432,7 @@ h1 {
 
     aside {
         width:auto;
-        position:fixed;
+        position: fixed;
         left:100vw;
         right:0;
         top:0;
@@ -496,8 +497,8 @@ h1 {
     }
 
     .modelsInfo--cancelButton {
-        display:none;
-    }
+         display:none; 
+    } 
 
     .modelsInfo--cancelMobileButton {
         display:block;

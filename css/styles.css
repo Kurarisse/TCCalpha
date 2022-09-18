@@ -248,6 +248,8 @@ body{
     width: 100%;
     z-index: -1;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 /* FIM ESTILO BANNER */
@@ -265,15 +267,20 @@ body{
 /* INÍCIO ESTILO PRODUTOS */
 #produto{
     width: 100%;
-    max-width: 1500px;
+    max-width: fit-content;
+    position: absolute;
+    justify-content: center;
     margin: 0 auto;
-    margin-bottom: 40px;
     align-items: center;
     flex-direction: column;
     text-align: center;
     flex-wrap: wrap;
-    border-radius: 15px;
     display: flex;
+}
+@media(max-width:1090px){
+    #produto{
+        position: relative;
+    }
 }
 
 .expande{
@@ -524,7 +531,7 @@ body{
 @media screen and (max-width: 1330px){
     .addDoc{
         display: none;
-    }    
+    }
 
     .addDoc2{
         display: none;

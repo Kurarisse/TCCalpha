@@ -31,7 +31,7 @@ body {
 }
 
 .menu-openner {
-    margin-bottom: 15px;
+    margin-bottom: 150px;
     margin-right: 15px;
     font-size: 26px;
     background-color: #e0c43bec;
@@ -53,6 +53,8 @@ body {
 
 .linha{
     display: flex;
+    background-color: rgb(198, 197, 227);
+    background-size: cover;
     flex-wrap: wrap;
     justify-content: space-between;
 
@@ -92,6 +94,21 @@ main h1{
     grid-template-columns: repeat(4, 1fr);
     margin-top: 15px;
 }
+
+/* INÍCIO ESTILO BANNER */
+#banner{
+    width: 100%;
+    z-index: -20;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(198, 197, 227);
+    /* background-image: url("../img/bannerZDModas.png");
+    background-size: cover;
+    background-repeat: no-repeat; */
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* FIM ESTILO BANNER */
 
 .models-item {
     text-align: center;
@@ -211,12 +228,12 @@ main h1{
 
 .modelsInfo .modelsInfo--desc {
     font-size:15px;
-    color:#999;
+    color:rgb(0, 0, 0);
     margin-top:10px;
 }
 
 .modelsInfo--sector {
-    color:#CCC;
+    color:rgb(0, 0, 0);
     text-transform: uppercase;
     font-size:14px;
     margin-top:30px;

@@ -17,8 +17,8 @@ function toggleMenu(event){
     }
 }
 
-// function preto(){
-//     const body = document.querySelector('body');
+ function preto(){
+    const body = document.querySelector('body');
 //     const espacoContraste = document.getElementById('botaoContraste');
 //     const aumentoFonte = document.getElementById('aumentoFonte');
 //     const imgCont = document.getElementById('imgContraste');
@@ -46,7 +46,7 @@ function toggleMenu(event){
 
 
 //     imgCont.classList.toggle('active');
-//     body.classList.toggle('active');
+     body.classList.toggle('active');
 //     espacoContraste.classList.toggle('active');
 //     aumentoFonte.classList.toggle('active');
 //     barraCont.classList.toggle('active');
@@ -70,7 +70,7 @@ function toggleMenu(event){
 //     banner.classList.toggle('active');
 //     addDoc.classList.toggle('active');
 
-// }
+ }
 
  btnCelular.addEventListener('click', toggleMenu);
-// contraste.addEventListener('click', preto);
+ contraste.addEventListener('click', preto);

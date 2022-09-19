@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Kanit', sans-serif, 'Arial';
+    
 }
 
 /* FIM ESTILOS PADRÃO */
@@ -15,7 +16,7 @@ body{
 }
 
 body.active{
-    background-color: rgb(0, 0, 0);
+    filter: invert(100%);
 }
 /* FIM ESTILOS GERAIS CORPO */
 
@@ -396,7 +397,7 @@ visibility: hidden;
     justify-content: center;
     align-items: center;
     background-color: rgb(198, 197, 227);
-} */
+}  */
 
 #area{
     width: 100%;

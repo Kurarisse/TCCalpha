@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'Kanit', sans-serif, 'Arial';
 }
+
 /* FIM ESTILOS PADRÃO */
 
 
@@ -77,7 +78,7 @@ body.active{
     height: 35px;
 }
 
-#botaoContraste.active, #aumentoFonte.active, #cabecalho.active, #btnCelular.active, #menu.active, #footer.active, #addDoc.active, #formulario.active, #area.active{
+/* #botaoContraste.active, #aumentoFonte.active, #cabecalho.active, #btnCelular.active, #menu.active, #footer.active, #addDoc.active, #formulario.active, #area.active{
     transition: none;
     box-shadow: none;
     background-color: rgb(0, 0, 0);
@@ -93,12 +94,12 @@ body.active{
 #box1.active ::placeholder, #box2.active ::placeholder,  #box3.active ::placeholder,  #box4.active ::placeholder,  #box5.active ::placeholder,  #box6.active ::placeholder,  #box7.active ::placeholder,  #box8.active ::placeholder{
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-}
+} */
 
-#prod1.active, #prod2.active, #prod3.active{
+/* #prod1.active, #prod2.active, #prod3.active{
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-}
+} */
 
 #banner.active{
 visibility: hidden;
@@ -118,10 +119,6 @@ visibility: hidden;
     color: rgb(255, 255, 255);
     cursor: pointer;
     margin-right: 5px;
-}
-
-#botaoContraste img{
-    margin-left: 3px;
 }
 /* FIM ESTILO CONTRASTE */
 
@@ -213,7 +210,7 @@ visibility: hidden;
     margin-left: 10px;
 }
 
-.hover a:hover{
+#hover a:hover{
     border-radius: 10px;
     background-color: rgb(58, 56, 121);
     box-shadow: 3px 3px rgba(58, 56, 121, 0.5);
@@ -323,7 +320,7 @@ visibility: hidden;
 
 
 /* ESTILO TÍTULO */
-.titulo{
+#titulo{
     margin: 20px auto;
     color: rgb(0, 0, 0);
     text-align: center;
@@ -343,6 +340,7 @@ visibility: hidden;
     text-align: center;
     flex-wrap: wrap;
     display: flex;
+
 }
 @media(max-width:1090px){
     #produto{
@@ -368,7 +366,7 @@ visibility: hidden;
     align-items: center;
 }
 
-.produto{
+.produtos{
     background-color: rgb(255, 255, 255);
     padding: 10px 30px;
     margin: 0 20px 70px 20px;
@@ -383,21 +381,22 @@ visibility: hidden;
     align-items: center;
 }
 
-.produto:hover{
+.produtos:hover{
     box-shadow: 0 8px 16px 0 rgba(58, 56, 121, 0.8);
 }
 /* FIM ESTILO PRODUTOS */
 
 
 /* INÍCIO ESTILO INSERÇÃO DE PRODUTOS, CADASTRO DE CLIENTES, PRODUTO AUMENTADO E COMENTÁRIOS */
-.corpo{
+/* #corpo{
     width: 100%;
     height: 100vh;
     display: flex;
+    z-index: -10;
     justify-content: center;
     align-items: center;
     background-color: rgb(198, 197, 227);
-}
+} */
 
 #area{
     width: 100%;
@@ -784,10 +783,10 @@ visibility: hidden;
     width: 100%;
 }
 
-#footer p{
+/* #footer p{
     margin-top: 10px;
     margin-bottom: 5px;
-}
+} */
 
 #footer p a{
     padding: 10px;
@@ -817,3 +816,9 @@ a{
     color: rgb(0, 0, 0);
 }
 /* FIM ESTILOS GERAIS */
+
+
+/* *.active{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+} */

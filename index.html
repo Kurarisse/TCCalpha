@@ -18,9 +18,6 @@
 </head>
 <body>
 
-    <!-- INÍCIO CORPO -->
-    <div id="corpo">
-
         <!-- INÍCIO CABEÇALHO -->
         <header id="cabecalho">
 
@@ -35,15 +32,15 @@
                 <button id="btnCelular" aria-label="Abrir menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false"><img src="img/menu.png" alt="Imagem menu hambúrguer" title="Menu de links das páginas"><span>Menu</span></button>
 
                     <ul id="menu" role="menu">
-                        <li class="hover"><a href="index.html" title="Link para a página de início">Home</a></li>
-                        <li class="hover"><a href="lingeries.html" title="Link para a página de produtos de lingerie">Lingeries</a></li>
-                        <li class="hover"><a href="sexShop.html" title="Link para a página de produtos de sex shop">Sex shop</a></li>
-                        <li class="hover"><a href="cosmeticos.html" title="Link para a página de produtos de cosméticos">Cosméticos</a></li>
-                        <li class="hover"><a href="sobre.html" title="Link para a página com informações sobre a empresa">Sobre nós</a></li>
-                        <li class="hover"><a href="insereProduto.html" title="Link para a página de cadastro de produtos">Cadastro de produtos</a></li>
+                        <li id="hover"><a href="index.html" title="Link para a página de início">Home</a></li>
+                        <li id="hover"><a href="lingeries.html" title="Link para a página de produtos de lingerie">Lingeries</a></li>
+                        <li id="hover"><a href="sexShop.html" title="Link para a página de produtos de sex shop">Sex shop</a></li>
+                        <li id="hover"><a href="cosmeticos.html" title="Link para a página de produtos de cosméticos">Cosméticos</a></li>
+                        <li id="hover"><a href="sobre.html" title="Link para a página com informações sobre a empresa">Sobre nós</a></li>
+                        <li id="hover"><a href="insereProduto.html" title="Link para a página de cadastro de produtos">Cadastro de produtos</a></li>
                         <li class="menu_hamburguer">                      
                         <!-- ADICIONAR FUNÇÃO ONCLICK -->
-                        <li class="hover"><a href=""><img src="img/sair.png" alt="Imagem de símbolo para sair da página" title="Símbolo para sair da página"><span>Sair</span></a></li>
+                        <li id="hover"><a href=""><img src="img/sair.png" alt="Imagem de símbolo para sair da página" title="Símbolo para sair da página"><span>Sair</span></a></li>
                         </li> 
                     </ul>
             </nav>
@@ -86,9 +83,9 @@
             <h2 id="titulo">Venha conhecer nossos produtos!</h2>
             <div class="centro">
 
-                <div class="produto expande">   
+                <div class="produtos expande">   
                     <a href="lingeries.html">
-                        <div class="desc" id="prod1">
+                        <div class="desc">
                         <h3>Lingeries</h3>
                         <img src="img/produto7.png" alt="Imagem de vestido">
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
@@ -96,9 +93,9 @@
                         </div>
                 </div>
 
-                <div class="produto expande">   
+                <div class="produtos expande">   
                     <a href="cosmeticos.html">
-                        <div class="desc" id="prod2">
+                        <div class="desc">
                         <h3>Cosméticos</h3>
                         <img src="img/produto1.png" alt="Imagem de camisa">
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
@@ -106,9 +103,9 @@
                         </div>
                 </div>
 
-                <div class="produto expande">   
+                <div class="produtos expande">   
                     <a href="sexShop.html">
-                        <div class="desc" id="prod3"> 
+                        <div class="desc"> 
                         <h3>Sex shop</h3>
                         <img src="img/produto6.png" alt="Imagem de camiseta">
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
@@ -121,7 +118,7 @@
             <!-- FIM DISPONIBILIZAÇÃO DE PRODUTOS PRINCIPAIS -->
         </div>
         </div>
-        <!-- FIM CORPO -->
+
    
         <!-- RODAPÉ -->
         <div id="footer">

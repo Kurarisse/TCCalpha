@@ -21,7 +21,7 @@
     <div id="corpo">
 
         <!-- INÍCIO CABEÇALHO -->
-        <header class="cabecalho">
+        <header id="cabecalho">
 
             <!-- INÍCIO ÁREA DA ESQUERDA -->
             <!-- INÍCIO MENU -->
@@ -33,7 +33,7 @@
             <nav id="nav">
                 <button id="btnCelular" aria-label="Abrir menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false"><img src="img/menu.png" alt="Imagem menu hambúrguer" title="Menu de links das páginas"><span>Menu</span></button>
 
-                    <ul class="menu" role="menu">
+                    <ul id="menu" role="menu">
                         <li class="hover"><a href="index.html" title="Link para a página de início">Home</a></li>
                         <li class="hover"><a href="lingeries.html" title="Link para a página de produtos de lingerie">Lingeries</a></li>
                         <li class="hover"><a href="sexShop.html" title="Link para a página de produtos de sex shop">Sex shop</a></li>
@@ -55,8 +55,8 @@
         <div class="direita">
             <div class="alinha">
                 <a href="cadastro.html" title="Link para a página de cadastro" class="margem">Cadastro/Login</a>
-                <a href="perfil.html" title="Link para acesso à página de perfil"><img src="img/perfil.png" alt="Imagem de um boneco de perfil" title="Boneco de perfil"><span>Perfil</span></a>
-                <button id="botaoContraste">&nbsp; / &nbsp;Alto Contraste<img src="img/contraste.png" alt="Símbolo de contraste" title="Símbolo de contraste" width="20px"></button>&nbsp;
+                <a href="perfil.html" title="Link para acesso à página de perfil"><div id="imgPerfil" title="Boneco de perfil" width="20px"></div><span>Perfil</span></a>
+                <button id="botaoContraste">&nbsp; / &nbsp;Alto Contraste<div id="imgContraste" title="Símbolo de contraste" width="20px"></div></button>&nbsp;
                 <button id="aumentoFonte">Aumento de fonte</button>
             </div>
         </div>
@@ -66,12 +66,12 @@
         <!-- FIM CABEÇALHO -->
         
          <!-- INÍCIO ÁREA CADASTRO DE PRODUTOS -->
-         <div class="area">
-            <div class="addDoc">
-                <img src="img/addProfile.svg" alt="Imagem de pessoa inserindo dados" title="Imagem de pessoa inserindo dados">
+         <div id="area">
+            <div id="addDoc">
+                <img src="img/addProfile.svg" alt="Imagem de pessoa inserindo dados" width="450px" title="Imagem de pessoa inserindo dados">
             </div>
 
-            <div class="formulario">
+            <div id="formulario">
                 <form action="">
                     <div class="formCabeca">
                         <div class="titulo2">
@@ -82,44 +82,44 @@
                         </div>
                     </div>
 
-                    <div class="boxes">
+                    <div class="boxes" id="box1">
                         <div class="box">
                             <label for="firstname">Primeiro nome</label>
                             <input type="text" name="firstname" id="firstname" placeholder="Insira seu nome" required>
                         </div>
 
-                        <div class="box">
+                        <div class="box" id="box2">
                             <label for="lastname">Sobrenome</label>
                             <input type="text" name="lastname" id="lastname" placeholder="Insira seu sobrenome" required>
                         </div>
 
-                        <div class="box">
+                        <div class="box" id="box3">
                             <label for="email">E-mail</label>
                             <input type="email" name="email" id="email" placeholder="nome@email.com" required>
                         </div>
 
-                        <div class="box">
+                        <div class="box" id="box4">
                             <label for="celular">Celular</label>
                             <input type="tel" name="celular" id="celular" placeholder="(XX) XXXXX-XXXX" required>
                         </div>
 
-                        <div class="box">
+                        <div class="box" id="box5">
                             <label for="logradouro">Logradouro</label>
                             <input type="text" name="logradouro" id="logradouro" placeholder="Informe seu logradouro" required>
                         </div>
 
                         
-                        <div class="box">
+                        <div class="box" id="box6">
                             <label for="cpf">CPF</label>
                             <input type="text" max-length="11" name="cpf" id="cpf" placeholder="Insira seu CPF" required>
                         </div>
 
-                        <div class="box">
+                        <div class="box" id="box7">
                             <label for="password">Senha</label>
                             <input type="password" name="password" id="password" placeholder="********" required>
                         </div>
 
-                        <div class="box">
+                        <div class="box" id="box8">
                             <label for="confirmpassword">Confirme sua senha</label>
                             <input type="password" name="confirmpassword" id="confirmpassword" placeholder="********" required>
                         </div>

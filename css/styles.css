@@ -12,6 +12,10 @@
 body{
     background-color:  rgb(198, 197, 227);
 }
+
+body.active{
+    background-color: rgb(0, 0, 0);
+}
 /* FIM ESTILOS GERAIS CORPO */
 
 
@@ -38,6 +42,69 @@ body{
     padding-left: 15px;
     background-color: rgb(79,77,140);
     padding-right: 10px;
+}
+
+#imgPerfil{
+    background-image: url("../img/perfilPreta.png");
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-right: 3px;
+    margin-left: 5px;
+}
+
+#imgPerfil.active{
+    background-image: url("../img/perfilBranca.png");
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+#imgContraste{
+    background-image: url("../img/contraste.png");
+    background-size: cover;
+    margin-right: 5px;
+    width: 29px;
+    height: 30px;
+}
+
+#imgContraste.active{
+    background-image: url("../img/contrasteBranca.png");
+    background-size: cover;
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+}
+
+#botaoContraste.active, #aumentoFonte.active, #cabecalho.active, #btnCelular.active, #menu.active, #footer.active, #addDoc.active, #formulario.active, #area.active{
+    transition: none;
+    box-shadow: none;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+#box1.active label, #box2.active label,  #box3.active label,  #box4.active label,  #box5.active label,  #box6.active label,  #box7.active label,  #box8.active label{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    box-shadow: none;
+}
+
+#box1.active ::placeholder, #box2.active ::placeholder,  #box3.active ::placeholder,  #box4.active ::placeholder,  #box5.active ::placeholder,  #box6.active ::placeholder,  #box7.active ::placeholder,  #box8.active ::placeholder{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+#prod1.active, #prod2.active, #prod3.active{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+#banner.active{
+visibility: hidden;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 5px;
 }
 
 #botaoContraste, #aumentoFonte{
@@ -70,7 +137,7 @@ body{
 
 
 /* INÍCIO ESTILO CABEÇALHO */
-.cabecalho{
+#cabecalho{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -123,17 +190,18 @@ body{
     margin-left: 35px;
 }
 
-.menu{
+#menu{
     display: flex;
     list-style: none;
+    background-color: rgb(79,77,140);
 }
 
-.menu li{
+#menu li{
     margin-left: 20px;
     margin-right: 20px;
 }
 
-.menu li a{
+#menu li a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 17px;
@@ -141,7 +209,7 @@ body{
     padding: 10px;
 }
 
-.menu li a span{
+#menu li a span{
     margin-left: 10px;
 }
 
@@ -165,16 +233,16 @@ body{
 #btnCelular{
     display: none;
     margin-left: 10px;
+    background-color: rgb(79,77,140);
 }
 
 @media (max-width:2000px){
-    .menu{
+    #menu{
         display: block;
         position: absolute;
         width: 100%;
         top: 105px;
         left: 0;
-        background-color: rgb(79,77,140);
         height: 0;
         transition: .6s;
         z-index: 10;
@@ -182,7 +250,7 @@ body{
         overflow-y: hidden;
     }
 
-    #nav.active .menu{
+    #nav.active #menu{
         height: calc(100vh - 100px);
         visibility: visible;
         overflow: auto;
@@ -191,7 +259,6 @@ body{
     #btnCelular{
         display: flex;
         cursor: pointer;
-        background-color: rgb(79,77,140);
         border: none;
         font-size: 20px;
     }
@@ -244,7 +311,7 @@ body{
 
 
 /* INÍCIO ESTILO BANNER */
-.banner{
+#banner{
     width: 100%;
     z-index: -1;
     display: flex;
@@ -332,7 +399,7 @@ body{
     background-color: rgb(198, 197, 227);
 }
 
-.area{
+#area{
     width: 100%;
     max-width: 1000px;
     height: 100%;
@@ -342,7 +409,7 @@ body{
     box-shadow: 5px 5px 10px rgba(58, 56, 121, 0.5);
 }
 
-.addDoc{
+#addDoc{
     width: 50%;
     display: flex;
     justify-content: center;
@@ -362,10 +429,6 @@ body{
 
 .addDoc2 img{
     background-color: rgb(255, 255, 255);
-}
-
-.addDoc img{
-    width: 31rem;
 }
 
 .login-button{
@@ -399,7 +462,7 @@ body{
     justify-content: center;
 }
 
-.formulario{
+#formulario{
     width: 50%;
     display: flex;
     justify-content: center;
@@ -529,7 +592,7 @@ body{
 }
 
 @media screen and (max-width: 1330px){
-    .addDoc{
+    #addDoc{
         display: none;
     }
 
@@ -537,17 +600,17 @@ body{
         display: none;
     }
 
-    .area{
+    #area{
         width: 50%;
     }
 
-    .formulario{
+    #formulario{
         width: 100%;
     }
 }
 
 @media screen and (max-width:1064px){
-    .area{
+    #area{
         width: 90%;
         height: 100%;
     }
@@ -604,7 +667,7 @@ body{
 
 
 /* INÍCIO ESTILO PERFIL */
-.area2{
+#area2{
     width: 90%;
     max-width: 1000px;
     height: 100%;
@@ -678,7 +741,7 @@ body{
 
 
 /* INÍCIO ESTILO PÁGINA SOBRE */
-.sobre{
+#sobre{
     width: 90%;
     display: flex;
     flex-wrap: wrap;

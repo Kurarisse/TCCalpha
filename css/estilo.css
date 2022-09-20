@@ -101,7 +101,7 @@ aside {
 }
 
 aside.show {
-    width:35vw;
+    width:40vw;
     padding-top: 10px;
     z-index: 3;
     transition:all ease .2s;

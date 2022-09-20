@@ -54,10 +54,10 @@ body.aumenta{
 }
 
 #imgPerfil{
-    background-image: url("../img/perfilPreta.png");
+    background-image: url("../img/perfiloficial.png");
     background-size: cover;
-    width: 30px;
-    height: 30px;
+    width: 37px;
+    height: 37px;
     margin-right: 3px;
     margin-left: 5px;
 }

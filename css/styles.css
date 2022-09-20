@@ -6,13 +6,13 @@
     font-family: 'Kanit', sans-serif, 'Arial';
     
 }
-
 /* FIM ESTILOS PADRÃO */
 
 
 /* INÍCIO ESTILOS GERAIS CORPO */
 body{
     background-color:  rgb(198, 197, 227);
+    font-size: 17px;
 }
 
 body.active{
@@ -20,7 +20,7 @@ body.active{
 }
 
 body.aumenta{
-    font-size: 22px;
+    font-size: 23px;
 }
 /* FIM ESTILOS GERAIS CORPO */
 
@@ -33,16 +33,12 @@ body.aumenta{
     display: flex;
     flex-wrap: wrap;
 }
-
-#corpo.aumenta{
-    font-size: 24px;
-}
 /* FIM ESTILO CORPO */
 
 
 /* INÍCIO ESTILO CONTRASTE */
-#botaoContraste.aumenta, #aumentoFonte.aumenta{
-    font-size: 22px;
+ #botaoContraste.aumenta, #aumentoFonte.aumenta{
+    font-size: 23px;
 }
 .contraste{
     width: 100%;
@@ -90,40 +86,9 @@ body.aumenta{
     height: 35px;
 }
 
-/* #botaoContraste.active, #aumentoFonte.active, #cabecalho.active, #btnCelular.active, #menu.active, #footer.active, #addDoc.active, #formulario.active, #area.active{
-    transition: none;
-    box-shadow: none;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-}
-
-#box1.active label, #box2.active label,  #box3.active label,  #box4.active label,  #box5.active label,  #box6.active label,  #box7.active label,  #box8.active label{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    box-shadow: none;
-}
-
-#box1.active ::placeholder, #box2.active ::placeholder,  #box3.active ::placeholder,  #box4.active ::placeholder,  #box5.active ::placeholder,  #box6.active ::placeholder,  #box7.active ::placeholder,  #box8.active ::placeholder{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-} */
-
-/* #prod1.active, #prod2.active, #prod3.active{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-} */
-
-#banner.active{
-visibility: hidden;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    padding: 5px;
-}
-
 #botaoContraste, #aumentoFonte{
     border: none;
     display: flex;
-    font-size: 17px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -160,9 +125,6 @@ visibility: hidden;
     box-shadow: 0px 5px 20px rgb(58, 56, 121);
 }
 
-#menu.aumenta a{
-    font-size: 24px;
-}
 .junto{
     display: flex;
     flex-wrap: wrap;
@@ -197,10 +159,6 @@ visibility: hidden;
     color: rgb(255, 255, 255);
 }
 
-#pagPerfil.aumenta, #cadastroLogin.aumenta{
-    font-size: 22px;
-}
-
 .margem{
     margin-left: 35px;
 }
@@ -219,7 +177,6 @@ visibility: hidden;
 #menu li a{
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 17px;
     display: block;
     padding: 10px;
 }
@@ -277,7 +234,7 @@ visibility: hidden;
         display: flex;
         cursor: pointer;
         border: none;
-        font-size: 20px;
+        font-size: 21px;
     }
 
     #btnCelular span{
@@ -311,7 +268,6 @@ visibility: hidden;
     outline: none;
     padding: 0;
     width: 325px;
-    font-size: 17px;
     padding-left: 10px;
 }
 
@@ -368,10 +324,6 @@ visibility: hidden;
     }
 }
 
-p.aumenta{
-    font-size: 24px;
-}
-
 .expande{
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -412,16 +364,6 @@ p.aumenta{
 
 
 /* INÍCIO ESTILO INSERÇÃO DE PRODUTOS, CADASTRO DE CLIENTES, PRODUTO AUMENTADO E COMENTÁRIOS */
-/* #corpo{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    z-index: -10;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(198, 197, 227);
-}  */
-
 #area{
     width: 100%;
     max-width: 1000px;
@@ -523,7 +465,7 @@ p.aumenta{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .box input, .box textarea, .img{
@@ -532,7 +474,6 @@ p.aumenta{
     padding: 15px;
     border: none;
     border-radius: 10px;
-    font-size: 16px;
     color: rgb(0, 0, 0);
     /* background-color: rgb(29, 1, 43); */
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
@@ -556,14 +497,12 @@ p.aumenta{
 
 .box label{
     display: flex;
-    font-size: 16px;
     font-weight: 500;
     color: rgb(0, 0, 0);
 }
 
 .box input::placeholder{
     color: rgb(0, 0, 0);
-    font-size: 16px;
 }
 
 .descProduto{
@@ -600,7 +539,6 @@ p.aumenta{
     background-color: rgb(103, 101, 173);
     padding: 10px;
     border-radius: 5px;
-    margin-top: 10px;
     cursor: pointer;
 }
 
@@ -610,7 +548,6 @@ p.aumenta{
 
 .butao button a{
     text-decoration: none;
-    font-size: 17px;
     color: rgb(255, 255, 255);
 }
 
@@ -714,10 +651,6 @@ p.aumenta{
     padding: 15px;
 }
 
-#comentPerfil.aumenta{
-    font-size: 22px;
-}
-
 .perfil{
     display: flex;
     flex-wrap: wrap;
@@ -751,7 +684,6 @@ p.aumenta{
     box-shadow: 2px 2px 8px rgb(58, 56, 121);
     border-radius: 15px;
     padding: 5px;
-    font-size: 16px;
     margin-top: 10px;
     margin-bottom: 5px;
 }
@@ -762,14 +694,6 @@ p.aumenta{
 
 #infoPerfil button:hover{
     background-color: rgb(79,77,140);
-}
-
-#infoPerfil.aumenta p, #infoPerfil.aumenta span{
-    font-size: 23px;
-} 
-
-button.aumenta{
-    font-size: 22px;
 }
 /* FIM ESTILO PERFIL */
 
@@ -824,10 +748,16 @@ button.aumenta{
     width: 100%;
 }
 
-/* #footer p{
+@media (max-width:600px){
+    #footer{
+        height: 160px;
+    }
+}
+
+#footer p{
     margin-top: 10px;
     margin-bottom: 5px;
-} */
+}
 
 #footer p a{
     padding: 10px;
@@ -838,15 +768,18 @@ button.aumenta{
 }
 
 .reservado{
-    font-size: 17px;
     padding: 5px;
 }
 /* FIM ESTILO RODAPÉ */
 
 
 /* INÍCIO ESTILOS GERAIS */
-p{
+button{
     font-size: 17px;
+}
+
+button.aumenta{
+    font-size: 23px;
 }
 
 a{
@@ -858,9 +791,3 @@ a{
     color: rgb(0, 0, 0);
 }
 /* FIM ESTILOS GERAIS */
-
-
-/* *.active{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-} */

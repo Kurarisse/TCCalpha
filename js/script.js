@@ -1,5 +1,6 @@
 const btnCelular = document.getElementById('btnCelular');
 const contraste = document.getElementById('botaoContraste');
+const tamanhoFonte = document.getElementById('aumentoFonte');
 
 function toggleMenu(event){
 
@@ -72,5 +73,26 @@ function toggleMenu(event){
 
  }
 
+ function aumenta(){
+    const body = document.querySelector('body');
+    const perfil = document.getElementById('infoPerfil');
+    const commentperfil = document.getElementById('comentPerfil');
+    const nav = document.getElementById('menu');
+    const alinha = document.getElementById('cadastroLogin');
+    const button = document.querySelector('button');
+    const pagPerfil = document.getElementById('pagPerfil');
+    
+    body.classList.toggle('aumenta');
+    perfil.classList.toggle('aumenta');
+    commentperfil.classList.toggle('aumenta');
+    nav.classList.toggle('aumenta');
+    alinha.classList.toggle('aumenta');
+    button.classList.toggle('aumenta');
+    contraste.classList.toggle('aumenta');
+    tamanhoFonte.classList.toggle('aumenta');
+    pagPerfil.classList.toggle('aumenta');
+ }
+
  btnCelular.addEventListener('click', toggleMenu);
  contraste.addEventListener('click', preto);
+ tamanhoFonte.addEventListener('click', aumenta);

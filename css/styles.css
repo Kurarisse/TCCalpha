@@ -18,6 +18,10 @@ body{
 body.active{
     filter: invert(100%);
 }
+
+body.aumenta{
+    font-size: 22px;
+}
 /* FIM ESTILOS GERAIS CORPO */
 
 
@@ -29,10 +33,17 @@ body.active{
     display: flex;
     flex-wrap: wrap;
 }
+
+#corpo.aumenta{
+    font-size: 24px;
+}
 /* FIM ESTILO CORPO */
 
 
 /* INÍCIO ESTILO CONTRASTE */
+#botaoContraste.aumenta, #aumentoFonte.aumenta{
+    font-size: 22px;
+}
 .contraste{
     width: 100%;
     display: flex;
@@ -149,6 +160,9 @@ visibility: hidden;
     box-shadow: 0px 5px 20px rgb(58, 56, 121);
 }
 
+#menu.aumenta a{
+    font-size: 24px;
+}
 .junto{
     display: flex;
     flex-wrap: wrap;
@@ -180,8 +194,11 @@ visibility: hidden;
     margin-right: 10px;
     justify-content: center;
     align-items: center;
-    font-size: 17px;
     color: rgb(255, 255, 255);
+}
+
+#pagPerfil.aumenta, #cadastroLogin.aumenta{
+    font-size: 22px;
 }
 
 .margem{
@@ -349,6 +366,10 @@ visibility: hidden;
     #produto{
         position: relative;
     }
+}
+
+p.aumenta{
+    font-size: 24px;
 }
 
 .expande{
@@ -681,7 +702,7 @@ visibility: hidden;
     box-shadow: 5px 5px 10px rgba(58, 56, 121, 0.5);
 }
 
-.comentPerfil{
+#comentPerfil{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -691,6 +712,10 @@ visibility: hidden;
     border-radius: 15px;
     background-color: rgb(255, 255, 255);
     padding: 15px;
+}
+
+#comentPerfil.aumenta{
+    font-size: 22px;
 }
 
 .perfil{
@@ -703,7 +728,7 @@ visibility: hidden;
     padding: 5px;
 }
 
-.infoPerfil{
+#infoPerfil{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -711,16 +736,15 @@ visibility: hidden;
     align-items: justify;
 }
 
-.infoPerfil p span{
+#infoPerfil p span{
     font-weight: bolder;
-    font-size: 18px;
 }
 
-.infoPerfil p{
+#infoPerfil p{
     padding: 5px;
 }
 
-.infoPerfil button{
+#infoPerfil button{
     border: none;
     background-color: rgb(103, 101, 173);
     color: rgb(0, 0, 0);
@@ -732,12 +756,20 @@ visibility: hidden;
     margin-bottom: 5px;
 }
 
-.infoPerfil button a{
+#infoPerfil button a{
     color: rgb(255, 255, 255);
 }
 
-.infoPerfil button:hover{
+#infoPerfil button:hover{
     background-color: rgb(79,77,140);
+}
+
+#infoPerfil.aumenta p, #infoPerfil.aumenta span{
+    font-size: 23px;
+} 
+
+button.aumenta{
+    font-size: 22px;
 }
 /* FIM ESTILO PERFIL */
 
@@ -747,10 +779,16 @@ visibility: hidden;
     width: 90%;
     display: flex;
     flex-wrap: wrap;
+    position: absolute;
     flex-direction: column;
     justify-content: center;
     border-radius: 10px;
     margin: 10px auto;
+}
+@media (max-width:1090px){
+    #sobre{
+        position: relative;
+    }
 }
 
 .intro{
@@ -759,7 +797,7 @@ visibility: hidden;
     border-radius: 10px;
     max-width: 1500px;
     box-shadow: 5px 5px 10px rgba(58, 56, 121, 0.5);
-    margin: 40px auto;
+    margin: 20px auto;
     padding: 10px;
 }
 
@@ -769,7 +807,7 @@ visibility: hidden;
     border-radius: 10px;
     max-width: 1500px;
     box-shadow: 5px 5px 10px rgba(58, 56, 121, 0.5);
-    margin: 20px auto;
+    margin: 10px auto;
     padding: 10px;
 }
 /* FIM ESTILO PÁGINA SOBRE */

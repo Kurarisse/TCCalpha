@@ -90,6 +90,7 @@ function toggleMenu(event){
      tamanhoFonte.classList.toggle('aumenta');
 //     footer.classList.toggle('aumenta');
     button.classList.toggle('aumenta');
+    tamanhoFonte.classList.toggle('muda');
 //   btnCelular.classList.toggle('aumenta');
 }
 

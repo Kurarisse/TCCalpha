@@ -40,6 +40,18 @@ body.aumenta{
  #botaoContraste.aumenta, #aumentoFonte.aumenta{
     font-size: 23px;
 }
+
+.muda{
+    visibility: hidden;
+    position: relative;
+}
+
+.muda:after{
+    visibility: visible;
+    position: absolute;
+    content: "Diminuir fonte";
+}
+
 .contraste{
     width: 100%;
     display: flex;

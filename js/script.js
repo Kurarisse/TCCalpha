@@ -1,6 +1,7 @@
 const btnCelular = document.getElementById('btnCelular');
 const contraste = document.getElementById('botaoContraste');
 const tamanhoFonte = document.getElementById('aumentoFonte');
+const perfil = document.getElementById('perfil');
 
 function toggleMenu(event){
 
@@ -17,6 +18,11 @@ function toggleMenu(event){
         event.currentTarget.setAttribute('aria-label', 'Abrir menu');
     }
 }
+
+// function togglePerfil(){
+//     const ul = document.getElementById('menu2');
+//     ul.classList.toggle('active');
+// }
 
  function preto(){
     const body = document.querySelector('body');
@@ -95,5 +101,6 @@ function toggleMenu(event){
 }
 
  btnCelular.addEventListener('click', toggleMenu);
+//  perfil.addEventListener('click', togglePerfil);
  contraste.addEventListener('click', preto);
  tamanhoFonte.addEventListener('click', aumenta);

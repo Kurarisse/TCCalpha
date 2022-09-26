@@ -197,6 +197,28 @@ body.aumenta{
     margin-left: 10px;
 }
 
+/* #menuPerfil{
+    display: flex;
+    list-style: none;
+    background-color: rgb(79,77,140);
+}
+
+#menuPerfil li{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#menuPerfil li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 10px;
+}
+
+#menuPerfil li a span{
+    margin-left: 10px;
+} */
+
 #hover a:hover{
     border-radius: 10px;
     background-color: rgb(58, 56, 121);
@@ -208,11 +230,11 @@ body.aumenta{
 
 
 /* INÍCIO ESTILO MENU HAMBÚRGUER */
-.menu_hamburguer{
+/* .menu_hamburguer{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-}
+} */
 
 #btnCelular{
     display: none;
@@ -234,6 +256,19 @@ body.aumenta{
         overflow-y: hidden;
     }
 
+    /* #menuPerfil{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 105px;
+        left: 0;
+        height: fit-content;
+        margin-bottom: 10px;
+        z-index: 10;
+        visibility: hidden;
+        overflow-y: hidden;
+    } */
+
     #nav.active #menu{
         /* height: calc(100vh - 100px); */
         height: fit-content;
@@ -241,6 +276,14 @@ body.aumenta{
         overflow: auto;
         margin-bottom: 10px;
     }
+
+    /* #menu2.active #menuPerfil{
+        height: calc(100vh - 100px); 
+        height: fit-content;
+        visibility: visible;
+        overflow: auto;
+        margin-bottom: 10px;
+    } */
 
     #btnCelular{
         display: flex;
@@ -342,8 +385,8 @@ body.aumenta{
 }
 
 .expande:hover{
-    -webkit-transform:scale(1.2);
-    transform:scale(1.2);
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
 }
 
 .centro{
@@ -387,6 +430,15 @@ body.aumenta{
 }
 
 #addDoc{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eecb86ec;
+    padding: 10px;
+}
+
+#addDoc2{
     width: 50%;
     display: flex;
     justify-content: center;
@@ -440,13 +492,33 @@ body.aumenta{
 }
 
 #formulario{
-    width: 50%;
+    width: 70%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
     align-items: center;
+    flex-wrap: wrap;
     background-color:#e6e6e6;
-    padding: 15px;
+    padding: 30px;
+}
+
+#formulario2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color:#e6e6e6;
+    padding: 30px;
+}
+
+#insereProduto{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(103, 101, 173);
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 17px;
 }
 
 .titulo2{
@@ -470,6 +542,15 @@ body.aumenta{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 15px 0;
+}
+
+.boxes2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 15px 0;
 }
 

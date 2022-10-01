@@ -1,4 +1,5 @@
 # Trabalho de conclusão de curso dos alunos do 3°INFO A.
+Versão alpha
 Membros do grupo:<br>
 Clarisse;<br>
 Guilherme;<br>
